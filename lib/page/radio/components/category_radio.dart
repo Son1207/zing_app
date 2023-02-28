@@ -28,9 +28,7 @@ class category_radio extends StatelessWidget {
                       'assets/images/rapviet.jpeg',
                       fit: BoxFit.cover,
                     ),
-
                   ),
-
                 ),
                 Container(
                   height: 20.0,
@@ -41,7 +39,6 @@ class category_radio extends StatelessWidget {
                   ),
                   child: Text("Live",style: TextStyle(color: Colors.white),textAlign: TextAlign.center,),
                 ),
-
               ],
             ),
           ),
@@ -63,9 +60,7 @@ class category_radio extends StatelessWidget {
                       'assets/images/kpop.jpg',
                       fit: BoxFit.cover,
                     ),
-
                   ),
-
                 ),
                 Container(
                   height: 20.0,
@@ -76,7 +71,6 @@ class category_radio extends StatelessWidget {
                   ),
                   child: Text("Live",style: TextStyle(color: Colors.white),textAlign: TextAlign.center,),
                 ),
-
               ],
             ),
           ),
@@ -98,9 +92,7 @@ class category_radio extends StatelessWidget {
                       'assets/images/nhac_moi_ngay.jpeg',
                       fit: BoxFit.cover,
                     ),
-
                   ),
-
                 ),
                 Container(
                   height: 20.0,
@@ -111,7 +103,6 @@ class category_radio extends StatelessWidget {
                   ),
                   child: Text("Live",style: TextStyle(color: Colors.white),textAlign: TextAlign.center,),
                 ),
-
               ],
             ),
           ),
@@ -133,9 +124,7 @@ class category_radio extends StatelessWidget {
                       'assets/images/bolero.jpeg',
                       fit: BoxFit.cover,
                     ),
-
                   ),
-
                 ),
                 Container(
                   height: 20.0,
@@ -146,7 +135,6 @@ class category_radio extends StatelessWidget {
                   ),
                   child: Text("Live",style: TextStyle(color: Colors.white),textAlign: TextAlign.center,),
                 ),
-
               ],
             ),
           ),
@@ -168,9 +156,7 @@ class category_radio extends StatelessWidget {
                       'assets/images/us_uk.jpeg',
                       fit: BoxFit.cover,
                     ),
-
                   ),
-
                 ),
                 Container(
                   height: 20.0,
@@ -181,11 +167,9 @@ class category_radio extends StatelessWidget {
                   ),
                   child: Text("Live",style: TextStyle(color: Colors.white),textAlign: TextAlign.center,),
                 ),
-
               ],
             ),
           ),
-
         ],
       ),
     );

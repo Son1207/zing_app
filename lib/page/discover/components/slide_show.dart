@@ -46,7 +46,6 @@ class slide_show extends StatelessWidget {
               'assets/images/slide_show_7.jpeg',
               fit: BoxFit.cover,
             ),
-
           ],
 
           /// Called whenever the page in the center of the viewport changes.

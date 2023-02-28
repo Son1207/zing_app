@@ -11,7 +11,6 @@ class discover_page extends StatefulWidget {
 }
 class _discover_pageState extends State<discover_page> {
 
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,9 +18,9 @@ class _discover_pageState extends State<discover_page> {
         padding: EdgeInsets.fromLTRB( 16, 40, 16, 0),
         child: Column(
           children:const [
-
             search(),
             slide_show(),
+
             SizedBox(height: 20),
             category_discover(),
           ],

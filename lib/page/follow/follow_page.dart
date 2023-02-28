@@ -14,7 +14,6 @@ class follow_page extends StatelessWidget {
         padding: EdgeInsets.fromLTRB( 16, 40, 16, 0),
         child: Column(
           children:const [
-
             search(),
 
             SizedBox(height: 20),

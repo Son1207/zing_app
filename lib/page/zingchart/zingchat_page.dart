@@ -9,7 +9,7 @@ class zingchart_page extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: const[
-          BarChartSample2(),
+          chart(),
         ],
       ),
     );

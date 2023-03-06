@@ -45,8 +45,8 @@ class _HomeState extends State<Home> {
             ),
             destinations: const [
               NavigationDestination(
-                  icon: Icon(Icons.music_video),
-                  selectedIcon: Icon(Icons.library_music_rounded),
+                  icon: Icon(Icons.library_music_outlined),
+                  selectedIcon: Icon(Icons.library_music),
                   label: 'Cá nhân',
               ),
               NavigationDestination(

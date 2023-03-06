@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class recently_personal extends StatelessWidget {
-  const recently_personal({
+class recently_discover extends StatelessWidget {
+  const recently_discover({
     super.key,
   });
 
@@ -50,28 +50,6 @@ class recently_personal extends StatelessWidget {
                 SizedBox(height: 10,),
                 Text("#zingchart"),
                 Text(""),
-              ],
-            ),
-          ),
-
-          SizedBox(width: 20,),
-          Container(
-            child: Column(
-              children: [
-                Container(
-                    height: 100.0,
-                    width: 100.0,
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.all(Radius.circular(10)),
-                      child:Image.asset(
-                        'assets/images/slide_show_2.jpeg',
-                        fit: BoxFit.cover,
-                      ),
-                    )
-                ),
-                SizedBox(height: 10,),
-                Text("Những Bài"),
-                Text("Hát Hay..."),
               ],
             ),
           ),

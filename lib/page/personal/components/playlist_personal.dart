@@ -8,12 +8,12 @@ class playlist_personal extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-        padding: EdgeInsets.only(top: 20),
+        padding: const EdgeInsets.only(top: 20),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
-              padding: EdgeInsets.only(top: 0),
+              padding: const EdgeInsets.only(top: 0),
               child: Row(
                 children: [
                   ClipRRect(
@@ -26,10 +26,10 @@ class playlist_personal extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsets.only(left: 10),
+                    padding: const EdgeInsets.only(left: 10),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
+                      children: const [
                         Text("Rap Việt"),
                         SizedBox(
                           height: 5,
@@ -46,7 +46,7 @@ class playlist_personal extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(top: 10),
+              padding: const EdgeInsets.only(top: 10),
               child: Row(
                 children: [
                   ClipRRect(
@@ -59,7 +59,7 @@ class playlist_personal extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsets.only(left: 10),
+                    padding: const EdgeInsets.only(left: 10),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: const [
@@ -79,7 +79,7 @@ class playlist_personal extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(top: 10),
+              padding: const EdgeInsets.only(top: 10),
               child: Row(
                 children: [
                   ClipRRect(
@@ -92,7 +92,7 @@ class playlist_personal extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsets.only(left: 10),
+                    padding: const EdgeInsets.only(left: 10),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: const [
@@ -112,7 +112,7 @@ class playlist_personal extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(top: 10),
+              padding: const EdgeInsets.only(top: 10),
               child: Row(
                 children: [
                   ClipRRect(
@@ -125,10 +125,10 @@ class playlist_personal extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsets.only(left: 10),
+                    padding: const EdgeInsets.only(left: 10),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
+                      children: const [
                         Text("Tuyển Tập Bolero"),
                         SizedBox(
                           height: 5,
@@ -145,7 +145,7 @@ class playlist_personal extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(top: 10),
+              padding: const EdgeInsets.only(top: 10),
               child: Row(
                 children: [
                   ClipRRect(
@@ -158,10 +158,10 @@ class playlist_personal extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsets.only(left: 10),
+                    padding: const EdgeInsets.only(left: 10),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
+                      children: const [
                         Text("Tuyển Tập Nhạc Phim Âu Mỹ"),
                         SizedBox(
                           height: 5,
@@ -178,7 +178,7 @@ class playlist_personal extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(top: 10),
+              padding: const EdgeInsets.only(top: 10),
               child: Row(
                 children: [
                   ClipRRect(
@@ -191,10 +191,10 @@ class playlist_personal extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsets.only(left: 10),
+                    padding: const EdgeInsets.only(left: 10),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
+                      children: const [
                         Text("Nhạc Hay Mỗi Ngày"),
                         SizedBox(
                           height: 5,

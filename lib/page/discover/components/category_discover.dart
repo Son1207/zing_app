@@ -31,7 +31,7 @@ class category_discover extends StatelessWidget {
             ),
           ),
 
-          SizedBox(width: 15),
+          const SizedBox(width: 15),
           Container(
             child: Column(
               children: [
@@ -42,16 +42,16 @@ class category_discover extends StatelessWidget {
                     borderRadius: BorderRadius.circular(20.0),
                     color: Colors.orange,
                   ),
-                  child: Icon(Icons.apps_outage_sharp,color: Colors.white,size: 30,),
+                  child:const Icon(Icons.apps_outage_sharp,color: Colors.white,size: 30,),
                 ),
-                SizedBox(height: 10,),
-                Text("Thể loại"),
+                const SizedBox(height: 10,),
+                const Text("Thể loại"),
 
               ],
             ),
           ),
 
-          SizedBox(width: 15),
+          const SizedBox(width: 15),
           Container(
             child: Column(
               children: [
@@ -71,7 +71,7 @@ class category_discover extends StatelessWidget {
             ),
           ),
 
-          SizedBox(width: 15),
+          const SizedBox(width: 15),
           Container(
             child: Column(
               children: [
@@ -82,16 +82,16 @@ class category_discover extends StatelessWidget {
                     borderRadius: BorderRadius.circular(20.0),
                     color: Colors.green,
                   ),
-                  child: Icon(Icons.podcasts,color: Colors.white,size: 30,),
+                  child:const Icon(Icons.podcasts,color: Colors.white,size: 30,),
                 ),
-                SizedBox(height: 10,),
-                Text("Podcast"),
+                const SizedBox(height: 10,),
+                const Text("Podcast"),
 
               ],
             ),
           ),
 
-          SizedBox(width: 15),
+          const SizedBox(width: 15),
           Container(
             child: Column(
               children: [
@@ -102,16 +102,16 @@ class category_discover extends StatelessWidget {
                     borderRadius: BorderRadius.circular(20.0),
                     color: Colors.red,
                   ),
-                  child: Icon(Icons.mic_external_on,color: Colors.white,size: 30,),
+                  child:const Icon(Icons.mic_external_on,color: Colors.white,size: 30,),
                 ),
-                SizedBox(height: 10,),
-                Text("Karaoke"),
+                const SizedBox(height: 10,),
+                const Text("Karaoke"),
 
               ],
             ),
           ),
 
-          SizedBox(width: 15),
+          const SizedBox(width: 15),
           Container(
             child: Column(
               children: [
@@ -122,16 +122,16 @@ class category_discover extends StatelessWidget {
                     borderRadius: BorderRadius.circular(20.0),
                     color: Colors.purpleAccent,
                   ),
-                  child: Icon(Icons.video_camera_back_rounded,color: Colors.white,size: 30,),
+                  child: const Icon(Icons.video_camera_back_rounded,color: Colors.white,size: 30,),
                 ),
-                SizedBox(height: 10,),
-                Text("Top MV"),
+                const SizedBox(height: 10,),
+                const Text("Top MV"),
 
               ],
             ),
           ),
 
-          SizedBox(width: 15),
+          const SizedBox(width: 15),
           Container(
             child: Column(
               children: [
@@ -142,10 +142,10 @@ class category_discover extends StatelessWidget {
                     borderRadius: BorderRadius.circular(20.0),
                     color: Colors.blueAccent,
                   ),
-                  child: Icon(Icons.calendar_month,color: Colors.white,size: 30,),
+                  child: const Icon(Icons.calendar_month,color: Colors.white,size: 30,),
                 ),
-                SizedBox(height: 10,),
-                Text("Sự kiện"),
+                const SizedBox(height: 10,),
+                const Text("Sự kiện"),
               ],
             ),
           ),

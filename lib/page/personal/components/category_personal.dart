@@ -15,7 +15,7 @@ class category_personal extends StatelessWidget {
           Container(
               margin: EdgeInsets.only(top: 0),
               width: 150.0,
-              padding: EdgeInsets.fromLTRB(10,10,20,10),
+              padding: const EdgeInsets.fromLTRB(10,10,20,10),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10.0),
                 color: Color.fromRGBO(234, 234, 234, 1.0),
@@ -35,11 +35,11 @@ class category_personal extends StatelessWidget {
               )
           ),
 
-          SizedBox(width: 15),
+          const SizedBox(width: 15),
           Container(
-              margin: EdgeInsets.only(top: 0),
+              margin: const EdgeInsets.only(top: 0),
               width: 150.0,
-              padding: EdgeInsets.fromLTRB(10,10,20,10),
+              padding: const EdgeInsets.fromLTRB(10,10,20,10),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10.0),
                 color: Color.fromRGBO(234, 234, 234, 1.0),
@@ -59,11 +59,11 @@ class category_personal extends StatelessWidget {
               )
           ),
 
-          SizedBox(width: 15),
+          const SizedBox(width: 15),
           Container(
-              margin: EdgeInsets.only(top: 0),
+              margin: const EdgeInsets.only(top: 0),
               width: 150.0,
-              padding: EdgeInsets.fromLTRB(10,10,20,10),
+              padding: const EdgeInsets.fromLTRB(10,10,20,10),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10.0),
                 color: Color.fromRGBO(234, 234, 234, 1.0),
@@ -81,11 +81,11 @@ class category_personal extends StatelessWidget {
               )
           ),
 
-          SizedBox(width: 15),
+          const SizedBox(width: 15),
           Container(
-              margin: EdgeInsets.only(top: 0),
+              margin: const EdgeInsets.only(top: 0),
               width: 150.0,
-              padding: EdgeInsets.fromLTRB(10,10,20,10),
+              padding: const EdgeInsets.fromLTRB(10,10,20,10),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10.0),
                 color: Color.fromRGBO(234, 234, 234, 1.0),
@@ -103,11 +103,11 @@ class category_personal extends StatelessWidget {
               )
           ),
 
-          SizedBox(width: 15),
+          const SizedBox(width: 15),
           Container(
               margin: EdgeInsets.only(top: 0),
               width: 150.0,
-              padding: EdgeInsets.fromLTRB(10,10,20,10),
+              padding: const EdgeInsets.fromLTRB(10,10,20,10),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10.0),
                 color: Color.fromRGBO(234, 234, 234, 1.0),
@@ -125,11 +125,11 @@ class category_personal extends StatelessWidget {
               )
           ),
 
-          SizedBox(width: 15),
+          const SizedBox(width: 15),
           Container(
               margin: EdgeInsets.only(top: 0),
               width: 150.0,
-              padding: EdgeInsets.fromLTRB(10,10,20,10),
+              padding: const EdgeInsets.fromLTRB(10,10,20,10),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10.0),
                 color: Color.fromRGBO(234, 234, 234, 1.0),
@@ -147,11 +147,11 @@ class category_personal extends StatelessWidget {
               )
           ),
 
-          SizedBox(width: 15),
+          const SizedBox(width: 15),
           Container(
-              margin: EdgeInsets.only(top: 0),
+              margin: const EdgeInsets.only(top: 0),
               width: 150.0,
-              padding: EdgeInsets.fromLTRB(10,10,20,10),
+              padding: const EdgeInsets.fromLTRB(10,10,20,10),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10.0),
                 color: Color.fromRGBO(234, 234, 234, 1.0),

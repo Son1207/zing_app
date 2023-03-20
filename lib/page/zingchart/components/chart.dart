@@ -56,7 +56,7 @@ class chartState extends State<chart> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Padding(
-              padding: EdgeInsets.only(top: 24),
+              padding: const EdgeInsets.only(top: 24),
               child: Column(
                   children: const[
                     search(),

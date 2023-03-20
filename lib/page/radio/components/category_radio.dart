@@ -37,18 +37,18 @@ class category_radio extends StatelessWidget {
                     borderRadius: BorderRadius.circular(20.0),
                     color: Colors.red,
                   ),
-                  child: Text("Live",style: TextStyle(color: Colors.white),textAlign: TextAlign.center,),
+                  child: const Text("Live",style: TextStyle(color: Colors.white),textAlign: TextAlign.center,),
                 ),
               ],
             ),
           ),
 
-          SizedBox(width: 15),
+          const SizedBox(width: 15),
           Container(
             child: Column(
               children: [
                 ClipRRect(
-                  borderRadius: BorderRadius.all(Radius.circular(50)),
+                  borderRadius: const BorderRadius.all(Radius.circular(50)),
                   child: Container(
                     height: 100.0,
                     width: 100.0,
@@ -75,7 +75,7 @@ class category_radio extends StatelessWidget {
             ),
           ),
 
-          SizedBox(width: 15),
+          const SizedBox(width: 15),
           Container(
             child: Column(
               children: [
@@ -107,7 +107,7 @@ class category_radio extends StatelessWidget {
             ),
           ),
 
-          SizedBox(width: 15),
+          const SizedBox(width: 15),
           Container(
             child: Column(
               children: [
@@ -165,7 +165,7 @@ class category_radio extends StatelessWidget {
                     borderRadius: BorderRadius.circular(20.0),
                     color: Colors.red,
                   ),
-                  child: Text("Live",style: TextStyle(color: Colors.white),textAlign: TextAlign.center,),
+                  child: const Text("Live",style: TextStyle(color: Colors.white),textAlign: TextAlign.center,),
                 ),
               ],
             ),

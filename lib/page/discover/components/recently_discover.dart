@@ -8,7 +8,7 @@ class recently_discover extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(top:20),
+      padding: const EdgeInsets.only(top:20),
       child: Row(
         children: [
           Container(
@@ -25,14 +25,14 @@ class recently_discover extends StatelessWidget {
                       ),
                     )
                 ),
-                SizedBox(height: 10,),
-                Text("Bài hát nghe"),
-                Text("gần đây"),
+                const SizedBox(height: 10,),
+                const Text("Bài hát nghe"),
+                const Text("gần đây"),
               ],
             ),
           ),
 
-          SizedBox(width: 20,),
+          const SizedBox(width: 20,),
           Container(
             child: Column(
               children: [
@@ -47,9 +47,9 @@ class recently_discover extends StatelessWidget {
                       ),
                     )
                 ),
-                SizedBox(height: 10,),
-                Text("#zingchart"),
-                Text(""),
+                const SizedBox(height: 10,),
+                const Text("#zingchart"),
+                const Text(""),
               ],
             ),
           ),

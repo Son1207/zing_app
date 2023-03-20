@@ -12,6 +12,8 @@ dependencies:
   flutter_image_slideshow: ^0.1.4
   cupertino_icons: ^1.0.2
   fl_chart: ^0.61.0
+  video_player: ^2.6.0
+
 
 dev_dependencies:
   flutter_test:
@@ -23,3 +25,4 @@ flutter:
   uses-material-design: true
   assets:
     - assets/images/
+    - assets/videos/

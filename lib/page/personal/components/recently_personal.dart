@@ -25,14 +25,14 @@ class recently_personal extends StatelessWidget {
                       ),
                     )
                 ),
-                SizedBox(height: 10,),
-                Text("Bài hát nghe"),
-                Text("gần đây"),
+                const SizedBox(height: 10,),
+                const Text("Bài hát nghe"),
+                const Text("gần đây"),
               ],
             ),
           ),
 
-          SizedBox(width: 20,),
+          const SizedBox(width: 20,),
           Container(
             child: Column(
               children: [
@@ -47,14 +47,14 @@ class recently_personal extends StatelessWidget {
                       ),
                     )
                 ),
-                SizedBox(height: 10,),
-                Text("#zingchart"),
-                Text(""),
+                const SizedBox(height: 10,),
+                const Text("#zingchart"),
+                const Text(""),
               ],
             ),
           ),
 
-          SizedBox(width: 20,),
+          const SizedBox(width: 20,),
           Container(
             child: Column(
               children: [
@@ -69,9 +69,9 @@ class recently_personal extends StatelessWidget {
                       ),
                     )
                 ),
-                SizedBox(height: 10,),
-                Text("Những Bài"),
-                Text("Hát Hay..."),
+                const SizedBox(height: 10,),
+                const Text("Những Bài"),
+                const Text("Hát Hay..."),
               ],
             ),
           ),

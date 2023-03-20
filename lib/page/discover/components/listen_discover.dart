@@ -26,14 +26,14 @@ class listen_discover extends StatelessWidget {
                       ),
                     )
                 ),
-                SizedBox(height: 10,),
-                Text("2010s EDM"),
-                Text(""),
+                const SizedBox(height: 10,),
+                const Text("2010s EDM"),
+                const Text(""),
               ],
             ),
           ),
 
-          SizedBox(width: 20,),
+          const SizedBox(width: 20,),
           Container(
             child: Column(
               children: [
@@ -48,9 +48,9 @@ class listen_discover extends StatelessWidget {
                       ),
                     )
                 ),
-                SizedBox(height: 10,),
-                Text("Nhạc Phim Âu Mỹ Mới"),
-                Text("Nhất"),
+                const SizedBox(height: 10,),
+                const Text("Nhạc Phim Âu Mỹ Mới"),
+                const Text("Nhất"),
               ],
             ),
           ),
@@ -70,14 +70,14 @@ class listen_discover extends StatelessWidget {
                       ),
                     )
                 ),
-                SizedBox(height: 10,),
-                Text("2010s Ballad"),
-                Text(""),
+                const SizedBox(height: 10,),
+                const Text("2010s Ballad"),
+                const Text(""),
               ],
             ),
           ),
 
-          SizedBox(width: 20,),
+          const SizedBox(width: 20,),
           Container(
             child: Column(
               children: [
@@ -92,14 +92,14 @@ class listen_discover extends StatelessWidget {
                       ),
                     )
                 ),
-                SizedBox(height: 10,),
-                Text("Đỉnh Cao EDM"),
-                Text(""),
+                const SizedBox(height: 10,),
+                const Text("Đỉnh Cao EDM"),
+                const Text(""),
               ],
             ),
           ),
 
-          SizedBox(width: 20,),
+          const SizedBox(width: 20,),
           Container(
             child: Column(
               children: [
@@ -114,14 +114,14 @@ class listen_discover extends StatelessWidget {
                       ),
                     )
                 ),
-                SizedBox(height: 10,),
-                Text("2010s Pop"),
-                Text(""),
+                const SizedBox(height: 10,),
+                const Text("2010s Pop"),
+                const Text(""),
               ],
             ),
           ),
 
-          SizedBox(width: 20,),
+          const SizedBox(width: 20,),
           Container(
             child: Column(
               children: [
@@ -136,9 +136,9 @@ class listen_discover extends StatelessWidget {
                       ),
                     )
                 ),
-                SizedBox(height: 10,),
-                Text("Nhạc Phim Âu Mỹ"),
-                Text("Chọn Lọc"),
+                const SizedBox(height: 10,),
+                const Text("Nhạc Phim Âu Mỹ"),
+                const Text("Chọn Lọc"),
               ],
             ),
           ),

@@ -8,7 +8,6 @@ class personal_page extends StatelessWidget {
   const personal_page({super.key});
 
   @override
-  @override
   Widget build(BuildContext context) {
     final Size size = MediaQuery.of(context).size;
     return Scaffold(
@@ -19,16 +18,16 @@ class personal_page extends StatelessWidget {
           padding: EdgeInsets.fromLTRB( 16, 40, 16, 0),
           child: Column(
             children: [
-              search(),
+              const search(),
 
-              SizedBox(height: 20),
-              Align(
+              const SizedBox(height: 20),
+              const Align(
                 alignment:Alignment.topLeft,
                 child: Text("Thư viện",style: TextStyle(fontSize: 25)),
               ),
 
-              SizedBox(height: 20),
-              category_personal(),
+              const SizedBox(height: 20),
+              const category_personal(),
 
               Padding(
                 padding: EdgeInsets.only(top: 30),
@@ -40,10 +39,10 @@ class personal_page extends StatelessWidget {
                 ),
               ),
 
-              recently_personal(),
+              const recently_personal(),
 
               Padding(
-                padding: EdgeInsets.only(top: 30),
+                padding: const EdgeInsets.only(top: 30),
                 child: Column(
                   children:const [
                     Align(
@@ -52,17 +51,16 @@ class personal_page extends StatelessWidget {
                     ),
                     SizedBox(height: 5),
                     Align(
-                        alignment:Alignment.topLeft,
-                        child: Text("Đang được nghe nhiều",
-                          style: TextStyle(fontSize: 15,color: Color.fromRGBO(
-                              90, 90, 90, 0.9)),)
+                      alignment:Alignment.topLeft,
+                      child: Text("Đang được nghe nhiều",
+                        style: TextStyle(fontSize: 15,color: Color.fromRGBO(90, 90, 90, 0.9)),),
                     ),
 
                   ],
                 ),
               ),
 
-              playlist_personal(),
+              const playlist_personal(),
 
             ],
           ),

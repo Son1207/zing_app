@@ -19,26 +19,26 @@ class _discover_pageState extends State<discover_page> {
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Padding(
-          padding: EdgeInsets.fromLTRB( 16, 40, 16, 0),
+          padding: const EdgeInsets.fromLTRB( 16, 40, 16, 0),
           child: Column(
             children: [
-              search(),
-              slide_show(),
+              const search(),
+              const slide_show(),
 
-              SizedBox(height: 20),
-              category_discover(),
+              const SizedBox(height: 20),
+              const category_discover(),
 
-              Padding(
+              const Padding(
                 padding: EdgeInsets.only(top: 20),
                 child: Align(
                   alignment:Alignment.topLeft,
                   child: Text("Nghe gần đây",style: TextStyle(fontSize: 20)),
                 ),
               ),
-              recently_discover(),
+              const recently_discover(),
 
               Padding(
-                padding: EdgeInsets.only(top: 30),
+                padding: const EdgeInsets.only(top: 30),
                 child: Row(
                   children:const [
                     Text("Có thể bạn muốn nghe",style: TextStyle(fontSize: 20),),
@@ -47,8 +47,8 @@ class _discover_pageState extends State<discover_page> {
                 ),
               ),
 
-              SizedBox(height: 20),
-              listen_discover(),
+              const SizedBox(height: 20),
+              const listen_discover(),
             ],
           ),
         ),

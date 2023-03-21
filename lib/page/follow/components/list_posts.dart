@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:zing_app/page/follow/components/comment_posts.dart';
 
 class list_posts extends StatelessWidget {
   const list_posts({Key? key}) : super(key: key);
@@ -93,35 +94,29 @@ class list_posts extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.only(top: 0),
-                      child: Row(
-                        children: [
-                          Icon(Icons.favorite_outline,),
-                          SizedBox(width: 5,),
-                          Text("Thích"),
-                        ],
+                    TextButton.icon(
+                      style: TextButton.styleFrom(
+                        primary: Colors.black, // text + icon color
                       ),
+                      icon: Icon(Icons.favorite_outline),
+                      label: Text('Thích',),
+                      onPressed: (){},
                     ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 0),
-                      child: Row(
-                        children: [
-                          Icon(Icons.mode_comment_outlined),
-                          SizedBox(width: 5,),
-                          Text("Bình luận"),
-                        ],
+                    TextButton.icon(
+                      style: TextButton.styleFrom(
+                        primary: Colors.black, // text + icon color
                       ),
+                      icon: Icon(Icons.mode_comment_outlined),
+                      label: Text('Bình luận',),
+                      onPressed: (){Navigator.pushNamed(context, Comment_Posts.routeName);},
                     ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 0),
-                      child: Row(
-                        children: [
-                          Icon(Icons.share_outlined),
-                          SizedBox(width: 5,),
-                          Text("Chia sẻ"),
-                        ],
+                    TextButton.icon(
+                      style: TextButton.styleFrom(
+                        primary: Colors.black, // text + icon color
                       ),
+                      icon: Icon(Icons.share_outlined),
+                      label: Text('Chia sẻ',),
+                      onPressed: (){},
                     ),
                   ],
                 ),

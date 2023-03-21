@@ -13,7 +13,8 @@ dependencies:
   cupertino_icons: ^1.0.2
   fl_chart: ^0.61.0
   video_player: ^2.6.0
-
+  video_box: ^0.17.0
+  comment_box: ^0.0.18
 
 dev_dependencies:
   flutter_test:
@@ -26,3 +27,4 @@ flutter:
   assets:
     - assets/images/
     - assets/videos/
+    - assets/audios/

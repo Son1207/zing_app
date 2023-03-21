@@ -1,85 +1,60 @@
 import 'package:flutter/material.dart';
+import 'package:video_box/video.controller.dart';
+import 'package:video_box/video_box.dart';
 import 'package:video_player/video_player.dart';
 
-
-
-class List_Videos extends StatefulWidget{
+class List_Videos extends StatefulWidget {
   static String routeName="/videos";
   @override
-  _HomeState createState() => _HomeState();
+  _ListVideoState createState() => _ListVideoState();
 }
 
-class _HomeState extends State<List_Videos> {
-  late VideoPlayerController controller;
+class _ListVideoState extends State<List_Videos> {
+  List<VideoController> vcs = [];
 
   @override
   void initState() {
-    loadVideoPlayer();
     super.initState();
-  }
-
-  loadVideoPlayer(){
-    controller = VideoPlayerController.asset('assets/videos/lacnhaucophaimuondoi.mp4');
-    controller.addListener(() {
-      setState(() {});
-    });
-    controller.initialize().then((value){
-      setState(() {});
-    });
-
+    for (var i = 0; i < 1; i++) {
+      vcs.add(VideoController(source: VideoPlayerController.asset("assets/videos/lacnhaucophaimuondoi.mp4"))
+        ..initialize());
+      vcs.add(VideoController(source: VideoPlayerController.asset("assets/videos/haydeemquen.mp4"))
+        ..initialize());
+      vcs.add(VideoController(source: VideoPlayerController.asset("assets/videos/comottinhyeugoilachiatay.mp4"))
+        ..initialize());
+      vcs.add(VideoController(source: VideoPlayerController.asset("assets/videos/thang4laloinoidoicuaem.mp4"))
+        ..initialize());
+      vcs.add(VideoController(source: VideoPlayerController.asset("assets/audios/emdongy.mp3"))
+        ..initialize());
+    }
   }
 
   @override
+  void dispose() {
+    for (var vc in vcs) {
+      vc.dispose();
+    }
+    super.dispose();
+  }
+  
+  @override
   Widget build(BuildContext context) {
-    return  Scaffold(
-      body: Container(
-          child: Column(
-              children:[
-                AspectRatio(
-                  aspectRatio: controller.value.aspectRatio,
-                  child: VideoPlayer(controller),
-                ),
-
-
-                Container(
-                    child: VideoProgressIndicator(
-                        controller,
-                        allowScrubbing: true,
-                        colors:VideoProgressColors(
-                          playedColor: Colors.redAccent,
-                        )
-                    )
-                ),
-
-                Container(
-                  child: Row(
-                    children: [
-                      IconButton(
-                          onPressed: (){
-                            if(controller.value.isPlaying){
-                              controller.pause();
-                            }else{
-                              controller.play();
-                            }
-                            setState(() {
-                            });
-                          },
-                          icon:Icon(controller.value.isPlaying?Icons.pause:Icons.play_arrow)
-                      ),
-
-                      IconButton(
-                          onPressed: (){
-                            controller.seekTo(Duration(seconds: 0));
-                            setState(() {
-                            });
-                          },
-                          icon:Icon(Icons.stop)
-                      )
-                    ],
-                  ),
-                )
-              ]
-          )
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Video"),
+        backgroundColor: Colors.redAccent,
+      ),
+      body: ListView(
+        children: <Widget>[
+          for (var vc in vcs)
+            Padding(
+              padding: const EdgeInsets.only(top: 10.0),
+              child: AspectRatio(
+                aspectRatio: 9 / 18,
+                child: VideoBox(controller: vc),
+              ),
+            ),
+        ],
       ),
     );
   }

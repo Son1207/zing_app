@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "591140887803",
+    "project_id": "zingapp-f5e25",
+    "storage_bucket": "zingapp-f5e25.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:591140887803:android:c6bf46ef603a590b4c245e",
+        "android_client_info": {
+          "package_name": "com.example.zing_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "591140887803-e8254ocagdmmte8pvbb9im6f90991c6e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXOY0OqV1hEohimLioZh8c1SZEbrQ23Uk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "591140887803-e8254ocagdmmte8pvbb9im6f90991c6e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

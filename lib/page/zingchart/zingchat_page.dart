@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:zing_app/page/search.dart';
 import 'package:zing_app/page/zingchart/components/chart.dart';
 
 class zingchart_page extends StatelessWidget {

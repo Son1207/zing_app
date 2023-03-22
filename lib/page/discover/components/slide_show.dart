@@ -9,7 +9,7 @@ class slide_show extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.fromLTRB(0, 20, 0, 20),
+      padding: const EdgeInsets.fromLTRB(16, 20, 16, 20),
       child: ClipRRect(
         borderRadius: BorderRadius.all(Radius.circular(10)),
         child: ImageSlideshow(

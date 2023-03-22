@@ -38,14 +38,13 @@ class List_News_VideoState extends State<List_News_Video> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
       body: ListView(
         children: <Widget>[
           for (var vc in vcs)
             Padding(
               padding: const EdgeInsets.only(top: 10.0),
               child: AspectRatio(
-                aspectRatio: 9 / 16,
+                aspectRatio: 9 / 18,
                 child: VideoBox(controller: vc),
               ),
             ),

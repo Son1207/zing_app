@@ -6,6 +6,7 @@ import 'package:zing_app/page/radio/radio_page.dart';
 import 'package:zing_app/page/zingchart/zingchat_page.dart';
 
 class Home extends StatefulWidget {
+  static String routeName="/home_page";
   const Home({super.key});
   @override
   State<Home> createState() => _HomeState();

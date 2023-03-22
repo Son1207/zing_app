@@ -16,16 +16,12 @@ class follow_page extends StatelessWidget {
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Padding(
-          padding: EdgeInsets.fromLTRB( 16, 40, 16, 0),
+          padding: EdgeInsets.fromLTRB( 0, 40, 0, 0),
           child: Column(
             children:const [
               search(),
-              SizedBox(height: 20),
               category_follow(),
-
-              SizedBox(height: 20),
               new_videos(),
-
               list_posts(),
             ],
           ),

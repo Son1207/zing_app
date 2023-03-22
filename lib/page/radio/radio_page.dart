@@ -9,12 +9,10 @@ class radio_page extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
-        padding: const EdgeInsets.fromLTRB( 16, 40, 16, 0),
+        padding: const EdgeInsets.fromLTRB( 0, 40, 0, 0),
         child: Column(
           children:const [
             search(),
-
-            SizedBox(height: 20),
             category_radio(),
           ],
         ),

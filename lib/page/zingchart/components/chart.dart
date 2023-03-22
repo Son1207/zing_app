@@ -51,9 +51,8 @@ class chartState extends State<chart> {
     return AspectRatio(
       aspectRatio: 1,
       child: Padding(
-        padding: const EdgeInsets.all(16),
+        padding: const EdgeInsets.fromLTRB( 0, 16, 0, 0),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Padding(
               padding: const EdgeInsets.only(top: 24),
@@ -64,25 +63,28 @@ class chartState extends State<chart> {
               ),
             ),
             SizedBox(height: 10,),
-            Row(
-              mainAxisSize: MainAxisSize.min,
-              children: <Widget>[
-                makeTransactionsIcon(),
-                const SizedBox(
-                  width: 38,
-                ),
-                const Text(
-                  '#zingchart',
-                  style: TextStyle(color: Colors.purple, fontSize: 22),
-                ),
-                const SizedBox(
-                  width: 4,
-                ),
-                const Icon(
-                  Icons.video_library_rounded,
-                  color: Colors.purple,
-                )
-              ],
+            Padding(
+              padding: const EdgeInsets.fromLTRB( 16, 0, 16, 0),
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: <Widget>[
+                  makeTransactionsIcon(),
+                  const SizedBox(
+                    width: 38,
+                  ),
+                  const Text(
+                    '#zingchart',
+                    style: TextStyle(color: Colors.purple, fontSize: 22),
+                  ),
+                  const SizedBox(
+                    width: 4,
+                  ),
+                  const Icon(
+                    Icons.video_library_rounded,
+                    color: Colors.purple,
+                  )
+                ],
+              ),
             ),
             const SizedBox(
               height: 38,

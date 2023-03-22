@@ -15,22 +15,22 @@ class personal_page extends StatelessWidget {
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Padding(
-          padding: EdgeInsets.fromLTRB( 16, 40, 16, 0),
+          padding: EdgeInsets.fromLTRB( 0, 40, 0, 0),
           child: Column(
             children: [
               const search(),
 
-              const SizedBox(height: 20),
-              const Align(
-                alignment:Alignment.topLeft,
-                child: Text("Thư viện",style: TextStyle(fontSize: 25)),
+              Padding(
+                padding: EdgeInsets.fromLTRB( 16, 20, 16, 0),
+                child: const Align(
+                  alignment:Alignment.topLeft,
+                  child: Text("Thư viện",style: TextStyle(fontSize: 25)),
+                ),
               ),
-
-              const SizedBox(height: 20),
               const category_personal(),
 
               Padding(
-                padding: EdgeInsets.only(top: 30),
+                padding: EdgeInsets.fromLTRB( 16, 30, 16, 0),
                 child: Row(
                   children:const [
                     Text("Nghe gần đây",style: TextStyle(fontSize: 20),),
@@ -42,7 +42,7 @@ class personal_page extends StatelessWidget {
               const recently_personal(),
 
               Padding(
-                padding: const EdgeInsets.only(top: 30),
+                padding: EdgeInsets.fromLTRB( 16, 30, 16, 0),
                 child: Column(
                   children:const [
                     Align(

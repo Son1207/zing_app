@@ -9,7 +9,7 @@ class new_videos extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(top:0),
+      padding: EdgeInsets.fromLTRB( 0, 20, 0, 0),
       child: Column(
         children: [
           Padding(
@@ -24,46 +24,55 @@ class new_videos extends StatelessWidget {
           scrollDirection: Axis.horizontal,
             child:Row(
               children: [
-                TextButton(
-                  onPressed: (){Navigator.pushNamed(context, List_News_Video.routeName);},
-                  child: Container(
-                    height: 160.0,
-                    width: 100.0,
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.all(Radius.circular(10)),
-                      child:Image.asset(
-                        'assets/images/new.jpg',
-                        fit: BoxFit.cover,
+                Padding(
+                  padding: const EdgeInsets.fromLTRB( 8, 0, 0, 0),
+                  child: TextButton(
+                    onPressed: (){Navigator.pushNamed(context, List_News_Video.routeName);},
+                    child: Container(
+                      height: 160.0,
+                      width: 100.0,
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.all(Radius.circular(10)),
+                        child:Image.asset(
+                          'assets/images/new.jpg',
+                          fit: BoxFit.cover,
+                        ),
                       ),
                     ),
                   ),
                 ),
 
-                TextButton(
-                  onPressed: (){Navigator.pushNamed(context, List_News_Video.routeName);},
-                  child: Container(
-                    height: 160.0,
-                    width: 100.0,
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.all(Radius.circular(10)),
-                      child:Image.asset(
-                        'assets/images/new1.jpg',
-                        fit: BoxFit.cover,
+                Padding(
+                  padding: const EdgeInsets.all(0),
+                  child: TextButton(
+                    onPressed: (){Navigator.pushNamed(context, List_News_Video.routeName);},
+                    child: Container(
+                      height: 160.0,
+                      width: 100.0,
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.all(Radius.circular(10)),
+                        child:Image.asset(
+                          'assets/images/new1.jpg',
+                          fit: BoxFit.cover,
+                        ),
                       ),
                     ),
                   ),
                 ),
 
-                TextButton(
-                  onPressed: (){Navigator.pushNamed(context, List_News_Video.routeName);},
-                  child: Container(
-                    height: 160.0,
-                    width: 100.0,
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.all(Radius.circular(10)),
-                      child:Image.asset(
-                        'assets/images/new2.jpg',
-                        fit: BoxFit.cover,
+                Padding(
+                  padding: const EdgeInsets.all(0),
+                  child: TextButton(
+                    onPressed: (){Navigator.pushNamed(context, List_News_Video.routeName);},
+                    child: Container(
+                      height: 160.0,
+                      width: 100.0,
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.all(Radius.circular(10)),
+                        child:Image.asset(
+                          'assets/images/new2.jpg',
+                          fit: BoxFit.cover,
+                        ),
                       ),
                     ),
                   ),

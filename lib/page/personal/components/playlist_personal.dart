@@ -8,7 +8,7 @@ class playlist_personal extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-        padding: const EdgeInsets.only(top: 20),
+        padding: EdgeInsets.fromLTRB( 16, 20, 16, 0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [

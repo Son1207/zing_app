@@ -57,7 +57,7 @@ class _TestMeState extends State<Comment_Posts> {
               ),
               title: Text(
                 data[i]['name'],
-                style: TextStyle(fontWeight: FontWeight.bold),
+                style: const TextStyle(fontWeight: FontWeight.bold),
               ),
               subtitle: Text(data[i]['message']),
               trailing: Text(data[i]['date'], style: TextStyle(fontSize: 10)),
@@ -71,7 +71,7 @@ class _TestMeState extends State<Comment_Posts> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Bình luận"),
+        title: const Text("Bình luận"),
         backgroundColor: Colors.redAccent,
       ),
       body: Container(
@@ -104,7 +104,7 @@ class _TestMeState extends State<Comment_Posts> {
           commentController: commentController,
           backgroundColor: Colors.blue.shade100,
           textColor: Colors.black,
-          sendWidget: Icon(Icons.send_sharp, size: 30, color: Colors.black),
+          sendWidget: const Icon(Icons.send_sharp, size: 30, color: Colors.black),
         ),
       ),
     );

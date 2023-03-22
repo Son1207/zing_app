@@ -41,7 +41,7 @@ class _ListVideoState extends State<List_Videos> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Video"),
+        title:const Text("Video"),
         backgroundColor: Colors.redAccent,
       ),
       body: ListView(
@@ -50,7 +50,7 @@ class _ListVideoState extends State<List_Videos> {
             Padding(
               padding: const EdgeInsets.only(top: 10.0),
               child: AspectRatio(
-                aspectRatio: 9 / 18,
+                aspectRatio: 9 / 15,
                 child: VideoBox(controller: vc),
               ),
             ),

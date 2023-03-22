@@ -2,13 +2,15 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:zing_app/page/follow/components/comment_posts.dart';
 
-class list_posts extends StatelessWidget {
+class list_posts extends StatefulWidget {
   const list_posts({Key? key}) : super(key: key);
-
   @override
+  list_postsState createState() => list_postsState();
+}
+class list_postsState extends State<list_posts> {
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(top:10),
+      padding: const EdgeInsets.only(top:10),
       child: Column(
         children: [
           Column(
@@ -26,7 +28,7 @@ class list_posts extends StatelessWidget {
                 child: Row(
                   children: [
                     ClipRRect(
-                      borderRadius: BorderRadius.all(Radius.circular(50)),
+                      borderRadius: const BorderRadius.all(Radius.circular(50)),
                       child: Image.asset(
                         height: 60.0,
                         width: 60.0,
@@ -38,7 +40,7 @@ class list_posts extends StatelessWidget {
                       padding: const EdgeInsets.only(left: 10),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
+                        children: const[
                           Text("Zing MP3"),
                           SizedBox(height: 10),
                           Text("Đề xuất cho bạn",style: TextStyle(color: Color.fromRGBO(90, 90, 90, 0.9)),),
@@ -48,13 +50,13 @@ class list_posts extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(height: 10,),
-              Text("Zing MP3 công bố 10 nghệ sĩ và ca khúc xuất sắc của Vpop năm 2022",maxLines: 4,textScaleFactor: 1.5,),
+              const SizedBox(height: 10,),
+              const Text("Zing MP3 công bố 10 nghệ sĩ và ca khúc xuất sắc của Vpop năm 2022",maxLines: 4,textScaleFactor: 1.5,),
               Padding(
                 padding: const EdgeInsets.only(top: 20),
                 child: ClipRRect(
 
-                  borderRadius: BorderRadius.all(Radius.circular(5)),
+                  borderRadius:const BorderRadius.all(Radius.circular(5)),
                   child: Image.asset(
                     'assets/images/list_post1.jpeg',
                     fit: BoxFit.cover,
@@ -65,7 +67,7 @@ class list_posts extends StatelessWidget {
                 padding: const EdgeInsets.only(top: 20),
                 child: Row(
                   children: [
-                    Icon(Icons.favorite,color: Colors.purple,),
+                    const Icon(Icons.favorite,color: Colors.purple,),
                     Image.asset(
                       height: 20.0,
                       'assets/images/icon_smile.png',
@@ -76,7 +78,7 @@ class list_posts extends StatelessWidget {
                       'assets/images/icon_wow.png',
                       fit: BoxFit.cover,
                     ),
-                    Text('1.1K'),
+                    const Text('1.1K'),
                   ],
                 ),
               ),
@@ -98,24 +100,24 @@ class list_posts extends StatelessWidget {
                       style: TextButton.styleFrom(
                         primary: Colors.black, // text + icon color
                       ),
-                      icon: Icon(Icons.favorite_outline),
-                      label: Text('Thích',),
-                      onPressed: (){},
+                      icon: const Icon(Icons.favorite_outline,),
+                      label: const Text('Thích',),
+                      onPressed: () {},
                     ),
                     TextButton.icon(
                       style: TextButton.styleFrom(
                         primary: Colors.black, // text + icon color
                       ),
-                      icon: Icon(Icons.mode_comment_outlined),
-                      label: Text('Bình luận',),
+                      icon: const Icon(Icons.mode_comment_outlined),
+                      label:const Text('Bình luận',),
                       onPressed: (){Navigator.pushNamed(context, Comment_Posts.routeName);},
                     ),
                     TextButton.icon(
                       style: TextButton.styleFrom(
                         primary: Colors.black, // text + icon color
                       ),
-                      icon: Icon(Icons.share_outlined),
-                      label: Text('Chia sẻ',),
+                      icon:const Icon(Icons.share_outlined),
+                      label:const Text('Chia sẻ',),
                       onPressed: (){},
                     ),
                   ],
@@ -126,7 +128,7 @@ class list_posts extends StatelessWidget {
             ],
           ),
 
-          SizedBox(height: 20),
+          const SizedBox(height: 20),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -142,7 +144,7 @@ class list_posts extends StatelessWidget {
                 child: Row(
                   children: [
                     ClipRRect(
-                      borderRadius: BorderRadius.all(Radius.circular(50)),
+                      borderRadius:const BorderRadius.all(Radius.circular(50)),
                       child: Image.asset(
                         height: 60.0,
                         width: 60.0,
@@ -154,7 +156,7 @@ class list_posts extends StatelessWidget {
                       padding: const EdgeInsets.only(left: 10),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
+                        children: const[
                           Text("Zing MP3"),
                           SizedBox(height: 10),
                           Text("Đề xuất cho bạn",style: TextStyle(color: Color.fromRGBO(90, 90, 90, 0.9)),),
@@ -164,13 +166,13 @@ class list_posts extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(height: 10,),
-              Text("Học tiếng Anh qua bài hát với 20 ca khúc tiếng Anh hay nhất mọi thời đại!",maxLines: 4,textScaleFactor: 1.5,),
+              const SizedBox(height: 10,),
+              const Text("Học tiếng Anh qua bài hát với 20 ca khúc tiếng Anh hay nhất mọi thời đại!",maxLines: 4,textScaleFactor: 1.5,),
               Padding(
                 padding: const EdgeInsets.only(top: 20),
                 child: ClipRRect(
 
-                  borderRadius: BorderRadius.all(Radius.circular(5)),
+                  borderRadius:const BorderRadius.all(Radius.circular(5)),
                   child: Image.asset(
                     'assets/images/list_post2.png',
                     fit: BoxFit.cover,
@@ -181,7 +183,7 @@ class list_posts extends StatelessWidget {
                 padding: const EdgeInsets.only(top: 20),
                 child: Row(
                   children: [
-                    Icon(Icons.favorite,color: Colors.purple,),
+                    const Icon(Icons.favorite,color: Colors.purple,),
                     Image.asset(
                       height: 20.0,
                       'assets/images/icon_smile.png',
@@ -192,7 +194,7 @@ class list_posts extends StatelessWidget {
                       'assets/images/icon_wow.png',
                       fit: BoxFit.cover,
                     ),
-                    Text('1.1K'),
+                    const Text('1.1K'),
                   ],
                 ),
               ),
@@ -213,7 +215,7 @@ class list_posts extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.only(top: 0),
                       child: Row(
-                        children: [
+                        children:const [
                           Icon(Icons.favorite_outline,),
                           SizedBox(width: 5,),
                           Text("Thích"),
@@ -223,7 +225,7 @@ class list_posts extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.only(top: 0),
                       child: Row(
-                        children: [
+                        children: const[
                           Icon(Icons.mode_comment_outlined),
                           SizedBox(width: 5,),
                           Text("Bình luận"),
@@ -233,7 +235,7 @@ class list_posts extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.only(top: 0),
                       child: Row(
-                        children: [
+                        children:const [
                           Icon(Icons.share_outlined),
                           SizedBox(width: 5,),
                           Text("Chia sẻ"),
@@ -247,7 +249,7 @@ class list_posts extends StatelessWidget {
             ],
           ),
 
-          SizedBox(height: 20),
+          const SizedBox(height: 20),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -263,7 +265,7 @@ class list_posts extends StatelessWidget {
                 child: Row(
                   children: [
                     ClipRRect(
-                      borderRadius: BorderRadius.all(Radius.circular(50)),
+                      borderRadius:const BorderRadius.all(Radius.circular(50)),
                       child: Image.asset(
                         height: 60.0,
                         width: 60.0,
@@ -275,7 +277,7 @@ class list_posts extends StatelessWidget {
                       padding: const EdgeInsets.only(left: 10),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
+                        children:const [
                           Text("Zing MP3"),
                           SizedBox(height: 10),
                           Text("Đề xuất cho bạn",style: TextStyle(color: Color.fromRGBO(90, 90, 90, 0.9)),),
@@ -285,13 +287,13 @@ class list_posts extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(height: 10,),
-              Text("Cơ hội xuất hiện trên Zing MP3 khi cover bài hát của thần tượng",maxLines: 4,textScaleFactor: 1.5,),
+              const SizedBox(height: 10,),
+              const Text("Cơ hội xuất hiện trên Zing MP3 khi cover bài hát của thần tượng",maxLines: 4,textScaleFactor: 1.5,),
               Padding(
                 padding: const EdgeInsets.only(top: 20),
                 child: ClipRRect(
 
-                  borderRadius: BorderRadius.all(Radius.circular(5)),
+                  borderRadius:const BorderRadius.all(Radius.circular(5)),
                   child: Image.asset(
                     'assets/images/list_post3.jpeg',
                     fit: BoxFit.cover,
@@ -302,7 +304,7 @@ class list_posts extends StatelessWidget {
                 padding: const EdgeInsets.only(top: 20),
                 child: Row(
                   children: [
-                    Icon(Icons.favorite,color: Colors.purple,),
+                    const Icon(Icons.favorite,color: Colors.purple,),
                     Image.asset(
                       height: 20.0,
                       'assets/images/icon_smile.png',
@@ -313,7 +315,7 @@ class list_posts extends StatelessWidget {
                       'assets/images/icon_wow.png',
                       fit: BoxFit.cover,
                     ),
-                    Text('1.1K'),
+                    const Text('1.1K'),
                   ],
                 ),
               ),
@@ -334,7 +336,7 @@ class list_posts extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.only(top: 0),
                       child: Row(
-                        children: [
+                        children:const [
                           Icon(Icons.favorite_outline,),
                           SizedBox(width: 5,),
                           Text("Thích"),
@@ -344,7 +346,7 @@ class list_posts extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.only(top: 0),
                       child: Row(
-                        children: [
+                        children: const[
                           Icon(Icons.mode_comment_outlined),
                           SizedBox(width: 5,),
                           Text("Bình luận"),
@@ -354,7 +356,7 @@ class list_posts extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.only(top: 0),
                       child: Row(
-                        children: [
+                        children:const [
                           Icon(Icons.share_outlined),
                           SizedBox(width: 5,),
                           Text("Chia sẻ"),

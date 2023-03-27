@@ -62,7 +62,7 @@ class chartState extends State<chart> {
                   ]
               ),
             ),
-            SizedBox(height: 10,),
+            const SizedBox(height: 10,),
             Padding(
               padding: const EdgeInsets.fromLTRB( 16, 0, 16, 0),
               child: Row(

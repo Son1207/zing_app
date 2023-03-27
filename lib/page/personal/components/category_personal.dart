@@ -8,19 +8,19 @@ class category_personal extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.fromLTRB( 16, 20, 16, 0),
+      padding: const EdgeInsets.fromLTRB( 16, 20, 16, 0),
       child: Container(
         height: 110.0,
         child: ListView(
           scrollDirection: Axis.horizontal,
           children: [
             Container(
-                margin: EdgeInsets.only(top: 0),
+                margin: const EdgeInsets.only(top: 0),
                 width: 150.0,
                 padding: const EdgeInsets.fromLTRB(10,10,20,10),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10.0),
-                  color: Color.fromRGBO(234, 234, 234, 1.0),
+                  color: const Color.fromRGBO(234, 234, 234, 1.0),
                 ),
 
                 child: Column(
@@ -44,7 +44,7 @@ class category_personal extends StatelessWidget {
                 padding: const EdgeInsets.fromLTRB(10,10,20,10),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10.0),
-                  color: Color.fromRGBO(234, 234, 234, 1.0),
+                  color: const Color.fromRGBO(234, 234, 234, 1.0),
                 ),
 
                 child: Column(
@@ -68,7 +68,7 @@ class category_personal extends StatelessWidget {
                 padding: const EdgeInsets.fromLTRB(10,10,20,10),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10.0),
-                  color: Color.fromRGBO(234, 234, 234, 1.0),
+                  color: const Color.fromRGBO(234, 234, 234, 1.0),
                 ),
 
                 child: Column(
@@ -90,7 +90,7 @@ class category_personal extends StatelessWidget {
                 padding: const EdgeInsets.fromLTRB(10,10,20,10),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10.0),
-                  color: Color.fromRGBO(234, 234, 234, 1.0),
+                  color: const Color.fromRGBO(234, 234, 234, 1.0),
                 ),
 
                 child: Column(
@@ -107,12 +107,12 @@ class category_personal extends StatelessWidget {
 
             const SizedBox(width: 15),
             Container(
-                margin: EdgeInsets.only(top: 0),
+                margin: const EdgeInsets.only(top: 0),
                 width: 150.0,
                 padding: const EdgeInsets.fromLTRB(10,10,20,10),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10.0),
-                  color: Color.fromRGBO(234, 234, 234, 1.0),
+                  color: const Color.fromRGBO(234, 234, 234, 1.0),
                 ),
 
                 child: Column(
@@ -129,12 +129,12 @@ class category_personal extends StatelessWidget {
 
             const SizedBox(width: 15),
             Container(
-                margin: EdgeInsets.only(top: 0),
+                margin: const EdgeInsets.only(top: 0),
                 width: 150.0,
                 padding: const EdgeInsets.fromLTRB(10,10,20,10),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10.0),
-                  color: Color.fromRGBO(234, 234, 234, 1.0),
+                  color: const Color.fromRGBO(234, 234, 234, 1.0),
                 ),
 
                 child: Column(
@@ -156,7 +156,7 @@ class category_personal extends StatelessWidget {
                 padding: const EdgeInsets.fromLTRB(10,10,20,10),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10.0),
-                  color: Color.fromRGBO(234, 234, 234, 1.0),
+                  color: const Color.fromRGBO(234, 234, 234, 1.0),
                 ),
 
                 child: Column(

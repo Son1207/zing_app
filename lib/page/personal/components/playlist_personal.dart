@@ -8,7 +8,7 @@ class playlist_personal extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-        padding: EdgeInsets.fromLTRB( 16, 20, 16, 0),
+        padding: const EdgeInsets.fromLTRB( 16, 20, 16, 0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -17,7 +17,7 @@ class playlist_personal extends StatelessWidget {
               child: Row(
                 children: [
                   ClipRRect(
-                    borderRadius: BorderRadius.all(Radius.circular(10)),
+                    borderRadius: const BorderRadius.all(Radius.circular(10)),
                     child: Image.asset(
                       height: 60.0,
                       width: 60.0,
@@ -50,7 +50,7 @@ class playlist_personal extends StatelessWidget {
               child: Row(
                 children: [
                   ClipRRect(
-                    borderRadius: BorderRadius.all(Radius.circular(10)),
+                    borderRadius: const BorderRadius.all(Radius.circular(10)),
                     child: Image.asset(
                       height: 60.0,
                       width: 60.0,
@@ -83,7 +83,7 @@ class playlist_personal extends StatelessWidget {
               child: Row(
                 children: [
                   ClipRRect(
-                    borderRadius: BorderRadius.all(Radius.circular(10)),
+                    borderRadius: const BorderRadius.all(Radius.circular(10)),
                     child: Image.asset(
                       height: 60.0,
                       width: 60.0,
@@ -116,7 +116,7 @@ class playlist_personal extends StatelessWidget {
               child: Row(
                 children: [
                   ClipRRect(
-                    borderRadius: BorderRadius.all(Radius.circular(10)),
+                    borderRadius: const BorderRadius.all(Radius.circular(10)),
                     child: Image.asset(
                       height: 60.0,
                       width: 60.0,
@@ -149,7 +149,7 @@ class playlist_personal extends StatelessWidget {
               child: Row(
                 children: [
                   ClipRRect(
-                    borderRadius: BorderRadius.all(Radius.circular(10)),
+                    borderRadius: const BorderRadius.all(Radius.circular(10)),
                     child: Image.asset(
                       height: 60.0,
                       width: 60.0,
@@ -182,7 +182,7 @@ class playlist_personal extends StatelessWidget {
               child: Row(
                 children: [
                   ClipRRect(
-                    borderRadius: BorderRadius.all(Radius.circular(10)),
+                    borderRadius: const BorderRadius.all(Radius.circular(10)),
                     child: Image.asset(
                       height: 60.0,
                       width: 60.0,

@@ -27,7 +27,7 @@ class _discover_pageState extends State<discover_page> {
               const category_discover(),
 
               const Padding(
-                padding: const EdgeInsets.fromLTRB(16, 20, 16, 0),
+                padding: EdgeInsets.fromLTRB(16, 20, 16, 0),
                 child: Align(
                   alignment:Alignment.topLeft,
                   child: Text("Nghe gần đây",style: TextStyle(fontSize: 20)),

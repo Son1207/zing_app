@@ -9,20 +9,19 @@ class personal_page extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Size size = MediaQuery.of(context).size;
     return Scaffold(
       backgroundColor: Colors.white,
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Padding(
-          padding: EdgeInsets.fromLTRB( 0, 40, 0, 0),
+          padding: const EdgeInsets.fromLTRB( 0, 40, 0, 0),
           child: Column(
             children: [
               const search(),
 
-              Padding(
+              const Padding(
                 padding: EdgeInsets.fromLTRB( 16, 20, 16, 0),
-                child: const Align(
+                child: Align(
                   alignment:Alignment.topLeft,
                   child: Text("Thư viện",style: TextStyle(fontSize: 25)),
                 ),
@@ -30,7 +29,7 @@ class personal_page extends StatelessWidget {
               const category_personal(),
 
               Padding(
-                padding: EdgeInsets.fromLTRB( 16, 30, 16, 0),
+                padding: const EdgeInsets.fromLTRB( 16, 30, 16, 0),
                 child: Row(
                   children:const [
                     Text("Nghe gần đây",style: TextStyle(fontSize: 20),),
@@ -42,7 +41,7 @@ class personal_page extends StatelessWidget {
               const recently_personal(),
 
               Padding(
-                padding: EdgeInsets.fromLTRB( 16, 30, 16, 0),
+                padding: const EdgeInsets.fromLTRB( 16, 30, 16, 0),
                 child: Column(
                   children:const [
                     Align(

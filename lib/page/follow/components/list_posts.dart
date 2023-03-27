@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:zing_app/page/follow/components/comment_posts.dart';
 
@@ -8,6 +7,8 @@ class list_posts extends StatefulWidget {
   list_postsState createState() => list_postsState();
 }
 class list_postsState extends State<list_posts> {
+
+  @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(top: 10),
@@ -20,7 +21,7 @@ class list_postsState extends State<list_posts> {
                 padding: const EdgeInsets.only(top: 0),
                 child: Container(
                   height: 10,
-                  color: Color.fromRGBO(90, 90, 90, 0.1),
+                  color: const Color.fromRGBO(90, 90, 90, 0.1),
                 ),
               ),
               Padding(
@@ -51,20 +52,16 @@ class list_postsState extends State<list_posts> {
                 ),
               ),
               const Padding(
-                padding: const EdgeInsets.fromLTRB( 16, 10, 16, 0),
+                padding: EdgeInsets.fromLTRB( 16, 10, 16, 0),
                 child: Text(
                   "Zing MP3 công bố 10 nghệ sĩ và ca khúc xuất sắc của Vpop năm 2022",maxLines: 4,textScaleFactor: 1.5,
                 ),
               ),
               Padding(
                 padding: const EdgeInsets.only(top: 20),
-                child: ClipRRect(
-
-                  borderRadius:const BorderRadius.all(Radius.circular(5)),
-                  child: Image.asset(
-                    'assets/images/list_post1.jpeg',
-                    fit: BoxFit.cover,
-                  ),
+                child: Image.asset(
+                  'assets/images/list_post1.jpeg',
+                  fit: BoxFit.cover,
                 ),
               ),
               Padding(
@@ -90,7 +87,7 @@ class list_postsState extends State<list_posts> {
                 padding: const EdgeInsets.fromLTRB( 16, 10, 16, 0),
                 child: Container(
                   height: 2,
-                  color: Color.fromRGBO(90, 90, 90, 0.1),
+                  color: const Color.fromRGBO(90, 90, 90, 0.1),
                 ),
               ),
 
@@ -137,7 +134,7 @@ class list_postsState extends State<list_posts> {
                 padding: const EdgeInsets.only(top: 15),
                 child: Container(
                   height: 10,
-                  color: Color.fromRGBO(90, 90, 90, 0.1),
+                  color: const Color.fromRGBO(90, 90, 90, 0.1),
                 ),
               ),
               Padding(
@@ -168,19 +165,16 @@ class list_postsState extends State<list_posts> {
                 ),
               ),
               const Padding(
-                padding: const EdgeInsets.fromLTRB( 16, 10, 16, 0),
+                padding: EdgeInsets.fromLTRB( 16, 10, 16, 0),
                 child: Text(
                   "Học tiếng Anh qua bài hát với 20 ca khúc tiếng Anh hay nhất mọi thời đại!",maxLines: 4,textScaleFactor: 1.5,
                 ),
               ),
               Padding(
                 padding: const EdgeInsets.only(top: 20),
-                child: ClipRRect(
-                  borderRadius:const BorderRadius.all(Radius.circular(5)),
-                  child: Image.asset(
-                    'assets/images/list_post2.png',
-                    fit: BoxFit.cover,
-                  ),
+                child: Image.asset(
+                  'assets/images/list_post2.png',
+                  fit: BoxFit.cover,
                 ),
               ),
               Padding(
@@ -206,7 +200,7 @@ class list_postsState extends State<list_posts> {
                 padding: const EdgeInsets.only(top: 10),
                 child: Container(
                   height: 2,
-                  color: Color.fromRGBO(90, 90, 90, 0.1),
+                  color: const Color.fromRGBO(90, 90, 90, 0.1),
                 ),
               ),
 
@@ -253,7 +247,7 @@ class list_postsState extends State<list_posts> {
                 padding: const EdgeInsets.only(top: 15),
                 child: Container(
                   height: 10,
-                  color: Color.fromRGBO(90, 90, 90, 0.1),
+                  color: const Color.fromRGBO(90, 90, 90, 0.1),
                 ),
               ),
               Padding(
@@ -291,12 +285,9 @@ class list_postsState extends State<list_posts> {
               ),
               Padding(
                 padding: const EdgeInsets.only(top: 20),
-                child: ClipRRect(
-                  borderRadius:const BorderRadius.all(Radius.circular(5)),
-                  child: Image.asset(
-                    'assets/images/list_post3.jpeg',
-                    fit: BoxFit.cover,
-                  ),
+                child: Image.asset(
+                  'assets/images/list_post3.jpeg',
+                  fit: BoxFit.cover,
                 ),
               ),
               Padding(
@@ -322,7 +313,7 @@ class list_postsState extends State<list_posts> {
                 padding: const EdgeInsets.only(top: 10),
                 child: Container(
                   height: 2,
-                  color: Color.fromRGBO(90, 90, 90, 0.1),
+                  color: const Color.fromRGBO(90, 90, 90, 0.1),
                 ),
               ),
 

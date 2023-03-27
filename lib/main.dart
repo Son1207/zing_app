@@ -3,6 +3,7 @@ import 'package:zing_app/modules/home_page.dart';
 import 'package:zing_app/page/detail_account.dart';
 import 'package:zing_app/page/detail_notification.dart';
 import 'package:zing_app/page/follow/components/comment_posts.dart';
+import 'package:zing_app/page/follow/components/list_songs.dart';
 import 'package:zing_app/page/follow/components/list_videos.dart';
 import 'package:zing_app/page/follow/components/list_news_video.dart';
 

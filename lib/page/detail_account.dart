@@ -1,7 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:zing_app/modules/home_page.dart';
-import 'package:zing_app/page/follow/follow_page.dart';
 
 class Detail_Account extends StatelessWidget {
   static String routeName="/detail_account";
@@ -163,7 +161,7 @@ class Detail_Account extends StatelessWidget {
             padding: const EdgeInsets.all(16),
             child: Container(
               height: 3,
-              color: Color.fromRGBO(90, 90, 90, 0.1),
+              color: const Color.fromRGBO(90, 90, 90, 0.1),
             ),
           ),
           Padding(

@@ -11,13 +11,25 @@ class slide_show extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.fromLTRB(16, 20, 16, 20),
       child: ClipRRect(
-        borderRadius: BorderRadius.all(Radius.circular(10)),
+        borderRadius: const BorderRadius.all(Radius.circular(10)),
         child: ImageSlideshow(
           width: double.infinity,
           height: 200,
           initialPage: 0,
           indicatorColor: Colors.blue,
           indicatorBackgroundColor: Colors.grey,
+
+          /// Called whenever the page in the center of the viewport changes.
+          onPageChanged: (value) {
+            print('Page changed: $value');
+          },
+
+          /// Auto scroll interval.
+          /// Do not auto scroll with null or 0.
+          autoPlayInterval: 3000,
+
+          /// Loops back to first slide.
+          isLoop: true,
           children: [
             Image.asset(
               'assets/images/slide_show_1.jpeg',
@@ -47,18 +59,6 @@ class slide_show extends StatelessWidget {
               fit: BoxFit.cover,
             ),
           ],
-
-          /// Called whenever the page in the center of the viewport changes.
-          onPageChanged: (value) {
-            print('Page changed: $value');
-          },
-
-          /// Auto scroll interval.
-          /// Do not auto scroll with null or 0.
-          autoPlayInterval: 3000,
-
-          /// Loops back to first slide.
-          isLoop: true,
         ),
       ),
 

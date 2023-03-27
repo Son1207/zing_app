@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:zing_app/page/detail_account.dart';
 import 'package:zing_app/page/detail_notification.dart';
 
@@ -20,7 +19,7 @@ class search extends StatelessWidget {
               height: 40.0,
               width: 40.0,
               child: ClipRRect(
-                borderRadius: BorderRadius.all(Radius.circular(40)),
+                borderRadius: const BorderRadius.all(Radius.circular(40)),
                 child:Image.asset(
                   'assets/images/avatar_comment.jpeg',
                   fit: BoxFit.cover,
@@ -38,8 +37,8 @@ class search extends StatelessWidget {
                     filled: true,
                     fillColor: Color.fromRGBO(234, 234, 234, 1.0),
                     hintText: "Tìm kiếm bài hát, MV, playlist...",
-                    prefixIcon: const Icon(Icons.search),
-                    suffixIcon: const Icon(Icons.mic,color: Colors.blue,),
+                    prefixIcon: Icon(Icons.search),
+                    suffixIcon: Icon(Icons.mic,color: Colors.blue,),
                   ),
                 ),
               ),
@@ -47,7 +46,7 @@ class search extends StatelessWidget {
           ),
           IconButton(
               onPressed: (){Navigator.pushNamed(context, detail_notification.routeName);},
-              icon: Icon(Icons.notifications_none_outlined,size: 30,),
+              icon: const Icon(Icons.notifications_none_outlined,size: 30,),
           )
         ],
       ),

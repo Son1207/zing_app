@@ -30,19 +30,19 @@ class _HomeState extends State<Home> {
           data: NavigationBarThemeData(
             indicatorColor: Colors.blue.shade100,
             labelTextStyle: MaterialStateProperty.all(
-              TextStyle(fontSize: 14, fontWeight: FontWeight.w400),
+              const TextStyle(fontSize: 14, fontWeight: FontWeight.w400),
             ),
           ),
           child: NavigationBar(
             height: 70,
-            backgroundColor: Color(0xFFf1f5fb),
+            backgroundColor: const Color(0xFFf1f5fb),
             labelBehavior: NavigationDestinationLabelBehavior.onlyShowSelected,
             selectedIndex: index,
-            animationDuration: Duration(seconds: 2),
+            animationDuration: const Duration(seconds: 2),
             onDestinationSelected: (index)=>
-            setState(() {
-              this.index = index;
-            }
+                setState(() {
+                  this.index = index;
+                }
             ),
             destinations: const [
               NavigationDestination(

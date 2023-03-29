@@ -4,6 +4,7 @@ import 'package:zing_app/page/personal/components/playlist_personal.dart';
 import 'package:zing_app/page/personal/components/recently_personal.dart';
 import 'package:zing_app/page/search.dart';
 
+// ignore: camel_case_types
 class personal_page extends StatelessWidget {
   const personal_page({super.key});
 

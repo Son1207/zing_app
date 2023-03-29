@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// ignore: camel_case_types
 class listen_discover extends StatelessWidget {
   const listen_discover({
     super.key,
@@ -9,14 +10,14 @@ class listen_discover extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.fromLTRB( 16, 20, 16, 0),
-      child: Container(
+      child: SizedBox(
         height: 200.0,
         child: ListView(
           scrollDirection: Axis.horizontal,
           children: [
             Column(
               children: [
-                Container(
+                SizedBox(
                     height: 150.0,
                     width: 150.0,
                     child: ClipRRect(
@@ -36,7 +37,7 @@ class listen_discover extends StatelessWidget {
             const SizedBox(width: 20,),
             Column(
               children: [
-                Container(
+                SizedBox(
                     height: 150.0,
                     width: 150.0,
                     child: ClipRRect(
@@ -56,7 +57,7 @@ class listen_discover extends StatelessWidget {
             const SizedBox(width: 20,),
             Column(
               children: [
-                Container(
+                SizedBox(
                     height: 150.0,
                     width: 150.0,
                     child: ClipRRect(
@@ -76,7 +77,7 @@ class listen_discover extends StatelessWidget {
             const SizedBox(width: 20,),
             Column(
               children: [
-                Container(
+                SizedBox(
                     height: 150.0,
                     width: 150.0,
                     child: ClipRRect(
@@ -96,7 +97,7 @@ class listen_discover extends StatelessWidget {
             const SizedBox(width: 20,),
             Column(
               children: [
-                Container(
+                SizedBox(
                     height: 150.0,
                     width: 150.0,
                     child: ClipRRect(
@@ -116,7 +117,7 @@ class listen_discover extends StatelessWidget {
             const SizedBox(width: 20,),
             Column(
               children: [
-                Container(
+                SizedBox(
                     height: 150.0,
                     width: 150.0,
                     child: ClipRRect(

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_image_slideshow/flutter_image_slideshow.dart';
 
+// ignore: camel_case_types
 class slide_show extends StatelessWidget {
   const slide_show({
     super.key,
@@ -21,7 +22,6 @@ class slide_show extends StatelessWidget {
 
           /// Called whenever the page in the center of the viewport changes.
           onPageChanged: (value) {
-            print('Page changed: $value');
           },
 
           /// Auto scroll interval.

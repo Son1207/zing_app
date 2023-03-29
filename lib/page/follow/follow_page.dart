@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:zing_app/page/follow/components/category_follow.dart';
 import 'package:zing_app/page/follow/components/list_posts.dart';
-import 'package:zing_app/page/follow/components/list_videos.dart';
 import 'package:zing_app/page/follow/components/new_videos.dart';
 import 'package:zing_app/page/search.dart';
 
+// ignore: camel_case_types
 class follow_page extends StatelessWidget {
+  static String routeName="/follow_page";
   const follow_page({super.key});
 
   @override

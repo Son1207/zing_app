@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// ignore: camel_case_types
 class category_discover extends StatelessWidget {
   const category_discover({
     super.key,
@@ -9,7 +10,7 @@ class category_discover extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.fromLTRB( 16, 20, 16, 0),
-      child: Container(
+      child: SizedBox(
         height: 80.0,
         child: ListView(
           scrollDirection: Axis.horizontal,

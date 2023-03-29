@@ -5,12 +5,14 @@ import 'package:zing_app/page/discover/components/recently_discover.dart';
 import 'package:zing_app/page/discover/components/slide_show.dart';
 import 'package:zing_app/page/search.dart';
 
+// ignore: camel_case_types
 class discover_page extends StatefulWidget {
   const discover_page({super.key});
 
   @override
   State<discover_page> createState() => _discover_pageState();
 }
+// ignore: camel_case_types
 class _discover_pageState extends State<discover_page> {
 
   @override

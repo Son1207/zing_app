@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:zing_app/page/follow/components/comment_posts.dart';
 
+// ignore: camel_case_types
 class list_posts extends StatefulWidget {
   const list_posts({Key? key}) : super(key: key);
   @override
   list_postsState createState() => list_postsState();
 }
+// ignore: camel_case_types
 class list_postsState extends State<list_posts> {
 
   @override
@@ -99,7 +101,7 @@ class list_postsState extends State<list_posts> {
                   children: [
                     TextButton.icon(
                       style: TextButton.styleFrom(
-                        primary: Colors.black, // text + icon color
+                        foregroundColor: Colors.black, // text + icon color
                       ),
                       icon: const Icon(Icons.favorite_outline,),
                       label: const Text('Thích',),
@@ -107,7 +109,7 @@ class list_postsState extends State<list_posts> {
                     ),
                     TextButton.icon(
                       style: TextButton.styleFrom(
-                        primary: Colors.black, // text + icon color
+                        foregroundColor: Colors.black, // text + icon color
                       ),
                       icon: const Icon(Icons.mode_comment_outlined),
                       label:const Text('Bình luận',),
@@ -115,7 +117,7 @@ class list_postsState extends State<list_posts> {
                     ),
                     TextButton.icon(
                       style: TextButton.styleFrom(
-                        primary: Colors.black, // text + icon color
+                        foregroundColor: Colors.black, // text + icon color
                       ),
                       icon:const Icon(Icons.share_outlined),
                       label:const Text('Chia sẻ',),
@@ -212,7 +214,7 @@ class list_postsState extends State<list_posts> {
                   children: [
                     TextButton.icon(
                       style: TextButton.styleFrom(
-                        primary: Colors.black, // text + icon color
+                        foregroundColor: Colors.black, // text + icon color
                       ),
                       icon: const Icon(Icons.favorite_outline,),
                       label: const Text('Thích',),
@@ -220,7 +222,7 @@ class list_postsState extends State<list_posts> {
                     ),
                     TextButton.icon(
                       style: TextButton.styleFrom(
-                        primary: Colors.black, // text + icon color
+                        foregroundColor: Colors.black, // text + icon color
                       ),
                       icon: const Icon(Icons.mode_comment_outlined),
                       label:const Text('Bình luận',),
@@ -228,7 +230,7 @@ class list_postsState extends State<list_posts> {
                     ),
                     TextButton.icon(
                       style: TextButton.styleFrom(
-                        primary: Colors.black, // text + icon color
+                        foregroundColor: Colors.black, // text + icon color
                       ),
                       icon:const Icon(Icons.share_outlined),
                       label:const Text('Chia sẻ',),
@@ -325,7 +327,7 @@ class list_postsState extends State<list_posts> {
                   children: [
                     TextButton.icon(
                       style: TextButton.styleFrom(
-                        primary: Colors.black, // text + icon color
+                        foregroundColor: Colors.black, // text + icon color
                       ),
                       icon: const Icon(Icons.favorite_outline,),
                       label: const Text('Thích',),
@@ -333,7 +335,7 @@ class list_postsState extends State<list_posts> {
                     ),
                     TextButton.icon(
                       style: TextButton.styleFrom(
-                        primary: Colors.black, // text + icon color
+                        foregroundColor: Colors.black, // text + icon color
                       ),
                       icon: const Icon(Icons.mode_comment_outlined),
                       label:const Text('Bình luận',),
@@ -341,7 +343,7 @@ class list_postsState extends State<list_posts> {
                     ),
                     TextButton.icon(
                       style: TextButton.styleFrom(
-                        primary: Colors.black, // text + icon color
+                        foregroundColor: Colors.black, // text + icon color
                       ),
                       icon:const Icon(Icons.share_outlined),
                       label:const Text('Chia sẻ',),

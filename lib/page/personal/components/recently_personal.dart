@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// ignore: camel_case_types
 class recently_personal extends StatelessWidget {
   const recently_personal({
     super.key,
@@ -13,7 +14,7 @@ class recently_personal extends StatelessWidget {
         children: [
           Column(
             children: [
-              Container(
+              SizedBox(
                   height: 100.0,
                   width: 100.0,
                   child: ClipRRect(
@@ -33,7 +34,7 @@ class recently_personal extends StatelessWidget {
           const SizedBox(width: 20,),
           Column(
             children: [
-              Container(
+              SizedBox(
                   height: 100.0,
                   width: 100.0,
                   child: ClipRRect(
@@ -53,7 +54,7 @@ class recently_personal extends StatelessWidget {
           const SizedBox(width: 20,),
           Column(
             children: [
-              Container(
+              SizedBox(
                   height: 100.0,
                   width: 100.0,
                   child: ClipRRect(

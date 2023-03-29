@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:zing_app/page/detail_account.dart';
 import 'package:zing_app/page/detail_notification.dart';
 
+// ignore: camel_case_types
 class search extends StatelessWidget {
   const search({
     super.key,
@@ -15,7 +16,7 @@ class search extends StatelessWidget {
         children: [
           TextButton(
             onPressed: (){Navigator.pushNamed(context, Detail_Account.routeName);},
-            child: Container(
+            child: SizedBox(
               height: 40.0,
               width: 40.0,
               child: ClipRRect(

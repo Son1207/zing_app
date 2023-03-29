@@ -1,9 +1,13 @@
 import 'package:comment_box/comment/comment.dart';
 import 'package:flutter/material.dart';
 
+// ignore: camel_case_types
 class Comment_Posts extends StatefulWidget {
   static String routeName="/comments";
+
+  const Comment_Posts({super.key});
   @override
+  // ignore: library_private_types_in_public_api
   _TestMeState createState() => _TestMeState();
 }
 
@@ -41,14 +45,13 @@ class _TestMeState extends State<Comment_Posts> {
               leading: GestureDetector(
                 onTap: () async {
                   // Display the image in large form.
-                  print("Comment Clicked");
                 },
                 child: Container(
                   height: 50.0,
                   width: 50.0,
-                  decoration: new BoxDecoration(
+                  decoration: const  BoxDecoration(
                       color: Colors.blue,
-                      borderRadius: new BorderRadius.all(Radius.circular(50))),
+                      borderRadius:  BorderRadius.all(Radius.circular(50))),
                   child: CircleAvatar(
                       radius: 50,
                       backgroundImage: CommentBox.commentImageParser(
@@ -60,7 +63,7 @@ class _TestMeState extends State<Comment_Posts> {
                 style: const TextStyle(fontWeight: FontWeight.bold),
               ),
               subtitle: Text(data[i]['message']),
-              trailing: Text(data[i]['date'], style: TextStyle(fontSize: 10)),
+              trailing: Text(data[i]['date'], style: const TextStyle(fontSize: 10)),
             ),
           )
       ],
@@ -74,38 +77,36 @@ class _TestMeState extends State<Comment_Posts> {
         title: const Text("Bình luận"),
         backgroundColor: Colors.redAccent,
       ),
-      body: Container(
-        child: CommentBox(
-          userImage: CommentBox.commentImageParser(
-              imageURLorPath: "assets/images/avatar_comment.jpeg"),
-          child: commentChild(filedata),
-          labelText: 'Nhập bình luận...',
-          errorText: 'Bình luận không được để trống',
-          withBorder: false,
-          sendButtonMethod: () {
-            if (formKey.currentState!.validate()) {
-              print(commentController.text);
-              setState(() {
-                var value = {
-                  'name': 'Hoài Sơn',
-                  'pic':'assets/images/avatar_comment.jpeg',
-                  'message': commentController.text,
-                  'date': 'Vừa xong'
-                };
-                filedata.insert(0, value);
-              });
-              commentController.clear();
-              FocusScope.of(context).unfocus();
-            } else {
-              print("Không hợp lệ");
-            }
-          },
-          formKey: formKey,
-          commentController: commentController,
-          backgroundColor: Colors.blue.shade100,
-          textColor: Colors.black,
-          sendWidget: const Icon(Icons.send_sharp, size: 30, color: Colors.black),
-        ),
+      body: CommentBox(
+        userImage: CommentBox.commentImageParser(
+            imageURLorPath: "assets/images/avatar_comment.jpeg"),
+        labelText: 'Nhập bình luận...',
+        errorText: 'Bình luận không được để trống',
+        withBorder: false,
+        sendButtonMethod: () {
+          if (formKey.currentState!.validate()) {
+            print(commentController.text);
+            setState(() {
+              var value = {
+                'name': 'Hoài Sơn',
+                'pic':'assets/images/avatar_comment.jpeg',
+                'message': commentController.text,
+                'date': 'Vừa xong'
+              };
+              filedata.insert(0, value);
+            });
+            commentController.clear();
+            FocusScope.of(context).unfocus();
+          } else {
+            print("Không hợp lệ");
+          }
+        },
+        formKey: formKey,
+        commentController: commentController,
+        backgroundColor: Colors.blue.shade100,
+        textColor: Colors.black,
+        sendWidget: const Icon(Icons.send_sharp, size: 30, color: Colors.black),
+        child: commentChild(filedata),
       ),
     );
   }

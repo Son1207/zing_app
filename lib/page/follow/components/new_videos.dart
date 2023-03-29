@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:zing_app/page/follow/components/list_new_video/list_new_videos1.dart';
+import 'package:zing_app/page/follow/components/list_new_video/list_new_videos2.dart';
 import 'package:zing_app/page/follow/components/list_news_video.dart';
 
+import 'list_new_video/list_new_videos3.dart';
+
+// ignore: camel_case_types
 class new_videos extends StatelessWidget {
   const new_videos({
     super.key,
@@ -28,7 +33,7 @@ class new_videos extends StatelessWidget {
                   padding: const EdgeInsets.fromLTRB( 8, 0, 0, 0),
                   child: TextButton(
                     onPressed: (){Navigator.pushNamed(context, List_News_Video.routeName);},
-                    child: Container(
+                    child: SizedBox(
                       height: 160.0,
                       width: 100.0,
                       child: ClipRRect(
@@ -45,8 +50,8 @@ class new_videos extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.all(0),
                   child: TextButton(
-                    onPressed: (){Navigator.pushNamed(context, List_News_Video.routeName);},
-                    child: Container(
+                    onPressed: (){Navigator.pushNamed(context, List_News_Video1.routeName);},
+                    child: SizedBox(
                       height: 160.0,
                       width: 100.0,
                       child: ClipRRect(
@@ -63,8 +68,8 @@ class new_videos extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.all(0),
                   child: TextButton(
-                    onPressed: (){Navigator.pushNamed(context, List_News_Video.routeName);},
-                    child: Container(
+                    onPressed: (){Navigator.pushNamed(context, List_News_Video2.routeName);},
+                    child: SizedBox(
                       height: 160.0,
                       width: 100.0,
                       child: ClipRRect(
@@ -81,8 +86,8 @@ class new_videos extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.fromLTRB( 0, 0, 8, 0),
                   child: TextButton(
-                    onPressed: (){Navigator.pushNamed(context, List_News_Video.routeName);},
-                    child: Container(
+                    onPressed: (){Navigator.pushNamed(context, List_News_Video3.routeName);},
+                    child: SizedBox(
                       height: 160.0,
                       width: 100.0,
                       child: ClipRRect(

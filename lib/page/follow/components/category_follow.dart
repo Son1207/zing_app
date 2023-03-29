@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:zing_app/page/follow/components/list_videos.dart';
 
+// ignore: camel_case_types
 class category_follow extends StatelessWidget {
   const category_follow({
     super.key,
@@ -15,7 +16,7 @@ class category_follow extends StatelessWidget {
         children: [
           ElevatedButton.icon(
             style: ElevatedButton.styleFrom(
-              primary: Colors.white70,
+              backgroundColor: Colors.white70,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(20),
               ),
@@ -27,7 +28,7 @@ class category_follow extends StatelessWidget {
           ),
           ElevatedButton.icon(
             style: ElevatedButton.styleFrom(
-              primary: Colors.white70,
+              backgroundColor: Colors.white70,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(20),
               ),
@@ -38,7 +39,7 @@ class category_follow extends StatelessWidget {
           ),
           ElevatedButton.icon(
             style: ElevatedButton.styleFrom(
-              primary: Colors.white70,
+              backgroundColor: Colors.white70,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(20),
               ),

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:zing_app/page/radio/components/category_radio.dart';
 import 'package:zing_app/page/search.dart';
 
+// ignore: camel_case_types
 class radio_page extends StatelessWidget {
   const radio_page({super.key});
 

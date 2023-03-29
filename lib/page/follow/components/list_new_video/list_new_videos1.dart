@@ -2,29 +2,29 @@ import 'package:flutter/material.dart';
 import 'package:video_box/video_box.dart';
 
 // ignore: camel_case_types
-class List_News_Video extends StatefulWidget {
-  static String routeName="/news_video";
+class List_News_Video1 extends StatefulWidget {
+  static String routeName="/newvideos1";
 
-  const List_News_Video({super.key});
+  const List_News_Video1({super.key});
   @override
-  List_News_VideoState createState() => List_News_VideoState();
+  // ignore: library_private_types_in_public_api
+  _ListNewsVideo1State createState() => _ListNewsVideo1State();
 }
 
-// ignore: camel_case_types
-class List_News_VideoState extends State<List_News_Video> {
+class _ListNewsVideo1State extends State<List_News_Video1> {
   List<VideoController> vcs = [];
 
   @override
   void initState() {
     super.initState();
     for (var i = 0; i < 1; i++) {
-      vcs.add(VideoController(source: VideoPlayerController.asset("assets/videos/new_video.mp4"))
-        ..initialize());
       vcs.add(VideoController(source: VideoPlayerController.asset("assets/videos/new_video1.mp4"))
         ..initialize());
       vcs.add(VideoController(source: VideoPlayerController.asset("assets/videos/new_video2.mp4"))
         ..initialize());
       vcs.add(VideoController(source: VideoPlayerController.asset("assets/videos/new_video3.mp4"))
+        ..initialize());
+      vcs.add(VideoController(source: VideoPlayerController.asset("assets/videos/new_video.mp4"))
         ..initialize());
     }
   }
@@ -36,7 +36,7 @@ class List_News_VideoState extends State<List_News_Video> {
     }
     super.dispose();
   }
-
+  
   @override
   Widget build(BuildContext context) {
     final PageController controller = PageController();
@@ -52,7 +52,6 @@ class List_News_VideoState extends State<List_News_Video> {
           for (var vc in vcs)
             VideoBox(controller: vc),
         ],
-
       ),
     );
   }

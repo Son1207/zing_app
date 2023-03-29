@@ -2,6 +2,7 @@ import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:zing_app/page/search.dart';
 
+// ignore: camel_case_types
 class chart extends StatefulWidget {
   const chart({super.key});
   final Color leftBarColor = Colors.blue;
@@ -12,6 +13,7 @@ class chart extends StatefulWidget {
   State<StatefulWidget> createState() => chartState();
 }
 
+// ignore: camel_case_types
 class chartState extends State<chart> {
   final double width = 7;
 

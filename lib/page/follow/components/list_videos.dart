@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:video_box/video.controller.dart';
 import 'package:video_box/video_box.dart';
-import 'package:video_player/video_player.dart';
 
+// ignore: camel_case_types
 class List_Videos extends StatefulWidget {
   static String routeName="/videos";
+
+  const List_Videos({super.key});
   @override
+  // ignore: library_private_types_in_public_api
   _ListVideoState createState() => _ListVideoState();
 }
 
@@ -39,21 +41,18 @@ class _ListVideoState extends State<List_Videos> {
   
   @override
   Widget build(BuildContext context) {
+    final PageController controller = PageController();
     return Scaffold(
       appBar: AppBar(
-        title:const Text("Video"),
-        backgroundColor: Colors.redAccent,
+        toolbarHeight: 35,
+        backgroundColor: Colors.black,
       ),
-      body: ListView(
+      body: PageView(
+        scrollDirection: Axis.vertical,
+        controller: controller,
         children: <Widget>[
           for (var vc in vcs)
-            Padding(
-              padding: const EdgeInsets.only(top: 10.0),
-              child: AspectRatio(
-                aspectRatio: 9 / 15,
-                child: VideoBox(controller: vc),
-              ),
-            ),
+            VideoBox(controller: vc),
         ],
       ),
     );

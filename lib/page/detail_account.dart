@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:zing_app/modules/home_page.dart';
 
+// ignore: camel_case_types
 class Detail_Account extends StatelessWidget {
   static String routeName="/detail_account";
   const Detail_Account({Key? key}) : super(key: key);
@@ -19,7 +20,7 @@ class Detail_Account extends StatelessWidget {
               children: [
                 TextButton.icon(
                   style: TextButton.styleFrom(
-                    primary: Colors.black, // text + icon color
+                    foregroundColor: Colors.black, // text + icon color
                   ),
                   icon: const Icon(Icons.arrow_back_ios_outlined),
                   label:const Text('',),
@@ -28,7 +29,7 @@ class Detail_Account extends StatelessWidget {
                 const Text("Tài khoản cá nhân",style: TextStyle(fontSize: 22,color: Colors.black),),
                 TextButton.icon(
                   style: TextButton.styleFrom(
-                    primary: Colors.black, // text + icon color
+                    foregroundColor: Colors.black, // text + icon color
                   ),
                   icon: const Icon(Icons.settings),
                   label:const Text('',),
@@ -39,7 +40,7 @@ class Detail_Account extends StatelessWidget {
           ),
           Padding(
             padding: const EdgeInsets.only(top: 40.0),
-            child: Container(
+            child: SizedBox(
               height: 90.0,
               width: 90.0,
               child: ClipRRect(
@@ -125,7 +126,7 @@ class Detail_Account extends StatelessWidget {
                   alignment:Alignment.topLeft,
                   child: TextButton.icon(
                     style: TextButton.styleFrom(
-                      primary: Colors.black, // text + icon color
+                      foregroundColor: Colors.black, // text + icon color
                     ),
                     icon: const Icon(Icons.person_add_outlined,),
                     label:const Text('Danh sách quan tâm',style: TextStyle(fontSize: 18,fontWeight: FontWeight.normal),),
@@ -136,7 +137,7 @@ class Detail_Account extends StatelessWidget {
                   alignment:Alignment.topLeft,
                   child: TextButton.icon(
                     style: TextButton.styleFrom(
-                      primary: Colors.black, // text + icon color
+                      foregroundColor: Colors.black, // text + icon color
                     ),
                     icon: const Icon(Icons.block,),
                     label:const Text('Danh sách chặn',style: TextStyle(fontSize: 18,fontWeight: FontWeight.normal),),
@@ -147,7 +148,7 @@ class Detail_Account extends StatelessWidget {
                   alignment:Alignment.topLeft,
                   child: TextButton.icon(
                     style: TextButton.styleFrom(
-                      primary: Colors.black, // text + icon color
+                      foregroundColor: Colors.black, // text + icon color
                     ),
                     icon: const Icon(Icons.hide_source_outlined,),
                     label:const Text('Danh sách tạm ẩn',style: TextStyle(fontSize: 18,fontWeight: FontWeight.normal),),
@@ -170,7 +171,7 @@ class Detail_Account extends StatelessWidget {
               alignment:Alignment.topLeft,
               child: TextButton.icon(
                 style: TextButton.styleFrom(
-                  primary: Colors.black, // text + icon color
+                  foregroundColor: Colors.black, // text + icon color
                 ),
                 icon: const Icon(Icons.logout_outlined,),
                 label:const Text('Đăng xuất tài khoản',style: TextStyle(fontSize: 18,fontWeight: FontWeight.normal),),

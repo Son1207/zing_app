@@ -15,15 +15,15 @@ class recently_discover extends StatelessWidget {
           Column(
             children: [
               SizedBox(
-                  height: 100.0,
-                  width: 100.0,
-                  child: ClipRRect(
-                    borderRadius: const BorderRadius.all(Radius.circular(10)),
-                    child:Image.asset(
-                      'assets/images/recently.jpeg',
-                      fit: BoxFit.cover,
-                    ),
-                  )
+                height: 100.0,
+                width: 100.0,
+                child: ClipRRect(
+                  borderRadius: const BorderRadius.all(Radius.circular(10)),
+                  child:Image.asset(
+                    'assets/images/recently.jpeg',
+                    fit: BoxFit.cover,
+                  ),
+                ),
               ),
               const SizedBox(height: 10,),
               const Text("Bài hát nghe"),
@@ -35,15 +35,15 @@ class recently_discover extends StatelessWidget {
           Column(
             children: [
               SizedBox(
-                  height: 100.0,
-                  width: 100.0,
-                  child: ClipRRect(
-                    borderRadius: const BorderRadius.all(Radius.circular(10)),
-                    child:Image.asset(
-                      'assets/images/zingchart.jpeg',
-                      fit: BoxFit.cover,
-                    ),
-                  )
+                height: 100.0,
+                width: 100.0,
+                child: ClipRRect(
+                  borderRadius: const BorderRadius.all(Radius.circular(10)),
+                  child:Image.asset(
+                    'assets/images/zingchart.jpeg',
+                    fit: BoxFit.cover,
+                  ),
+                ),
               ),
               const SizedBox(height: 10,),
               const Text("#zingchart"),

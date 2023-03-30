@@ -9,7 +9,12 @@ class list_posts extends StatefulWidget {
 }
 // ignore: camel_case_types
 class list_postsState extends State<list_posts> {
-
+  bool _isColor = true;
+  bool _isIcon = true;
+  bool _isColor1 = true;
+  bool _isIcon1 = true;
+  bool _isColor2 = true;
+  bool _isIcon2 = true;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -99,13 +104,19 @@ class list_postsState extends State<list_posts> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
+
+
                     TextButton.icon(
                       style: TextButton.styleFrom(
                         foregroundColor: Colors.black, // text + icon color
                       ),
-                      icon: const Icon(Icons.favorite_outline,),
-                      label: const Text('Thích',),
-                      onPressed: () {},
+                      icon: Icon(_isIcon ? Icons.favorite_outline : Icons.favorite,
+                          color: _isColor ? Colors.black : Colors.red),
+                      label:const Text('Thích',),
+                      onPressed: (){setState(() {
+                        _isIcon =!_isIcon;
+                        _isColor =!_isColor;
+                      });},
                     ),
                     TextButton.icon(
                       style: TextButton.styleFrom(
@@ -216,9 +227,13 @@ class list_postsState extends State<list_posts> {
                       style: TextButton.styleFrom(
                         foregroundColor: Colors.black, // text + icon color
                       ),
-                      icon: const Icon(Icons.favorite_outline,),
-                      label: const Text('Thích',),
-                      onPressed: () {},
+                      icon: Icon(_isIcon1 ? Icons.favorite_outline : Icons.favorite,
+                          color: _isColor1 ? Colors.black : Colors.red),
+                      label:const Text('Thích',),
+                      onPressed: (){setState(() {
+                        _isIcon1 =!_isIcon1;
+                        _isColor1 =!_isColor1;
+                      });},
                     ),
                     TextButton.icon(
                       style: TextButton.styleFrom(
@@ -329,9 +344,13 @@ class list_postsState extends State<list_posts> {
                       style: TextButton.styleFrom(
                         foregroundColor: Colors.black, // text + icon color
                       ),
-                      icon: const Icon(Icons.favorite_outline,),
-                      label: const Text('Thích',),
-                      onPressed: () {},
+                      icon: Icon(_isIcon2 ? Icons.favorite_outline : Icons.favorite,
+                          color: _isColor2 ? Colors.black : Colors.red),
+                      label:const Text('Thích',),
+                      onPressed: (){setState(() {
+                        _isIcon2 =!_isIcon2;
+                        _isColor2 =!_isColor2;
+                      });},
                     ),
                     TextButton.icon(
                       style: TextButton.styleFrom(

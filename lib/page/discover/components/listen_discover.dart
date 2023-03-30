@@ -18,15 +18,15 @@ class listen_discover extends StatelessWidget {
             Column(
               children: [
                 SizedBox(
-                    height: 150.0,
-                    width: 150.0,
-                    child: ClipRRect(
-                      borderRadius: const BorderRadius.all(Radius.circular(10)),
-                      child: Image.asset(
-                        'assets/images/listen_2010sEDM.jpeg',
-                        fit: BoxFit.cover,
-                      ),
-                    )
+                  height: 150.0,
+                  width: 150.0,
+                  child: ClipRRect(
+                    borderRadius: const BorderRadius.all(Radius.circular(10)),
+                    child: Image.asset(
+                      'assets/images/listen_2010sEDM.jpeg',
+                      fit: BoxFit.cover,
+                    ),
+                  ),
                 ),
                 const SizedBox(height: 10,),
                 const Text("2010s EDM"),
@@ -38,15 +38,15 @@ class listen_discover extends StatelessWidget {
             Column(
               children: [
                 SizedBox(
-                    height: 150.0,
-                    width: 150.0,
-                    child: ClipRRect(
-                      borderRadius: const BorderRadius.all(Radius.circular(10)),
-                      child: Image.asset(
-                        'assets/images/listen_avatar.jpeg',
-                        fit: BoxFit.cover,
-                      ),
-                    )
+                  height: 150.0,
+                  width: 150.0,
+                  child: ClipRRect(
+                    borderRadius: const BorderRadius.all(Radius.circular(10)),
+                    child: Image.asset(
+                      'assets/images/listen_avatar.jpeg',
+                      fit: BoxFit.cover,
+                    ),
+                  ),
                 ),
                 const SizedBox(height: 10,),
                 const Text("Nhạc Phim Âu Mỹ Mới"),
@@ -58,15 +58,15 @@ class listen_discover extends StatelessWidget {
             Column(
               children: [
                 SizedBox(
-                    height: 150.0,
-                    width: 150.0,
-                    child: ClipRRect(
-                      borderRadius: const BorderRadius.all(Radius.circular(10)),
-                      child: Image.asset(
-                        'assets/images/listen_2010sBallad.jpeg',
-                        fit: BoxFit.cover,
-                      ),
-                    )
+                  height: 150.0,
+                  width: 150.0,
+                  child: ClipRRect(
+                    borderRadius: const BorderRadius.all(Radius.circular(10)),
+                    child: Image.asset(
+                      'assets/images/listen_2010sBallad.jpeg',
+                      fit: BoxFit.cover,
+                    ),
+                  ),
                 ),
                 const SizedBox(height: 10,),
                 const Text("2010s Ballad"),
@@ -78,15 +78,15 @@ class listen_discover extends StatelessWidget {
             Column(
               children: [
                 SizedBox(
-                    height: 150.0,
-                    width: 150.0,
-                    child: ClipRRect(
-                      borderRadius: const BorderRadius.all(Radius.circular(10)),
-                      child: Image.asset(
-                        'assets/images/listen_EDM_dinhcao.jpeg',
-                        fit: BoxFit.cover,
-                      ),
-                    )
+                  height: 150.0,
+                  width: 150.0,
+                  child: ClipRRect(
+                    borderRadius: const BorderRadius.all(Radius.circular(10)),
+                    child: Image.asset(
+                      'assets/images/listen_EDM_dinhcao.jpeg',
+                      fit: BoxFit.cover,
+                    ),
+                  ),
                 ),
                 const SizedBox(height: 10,),
                 const Text("Đỉnh Cao EDM"),
@@ -98,15 +98,15 @@ class listen_discover extends StatelessWidget {
             Column(
               children: [
                 SizedBox(
-                    height: 150.0,
-                    width: 150.0,
-                    child: ClipRRect(
-                      borderRadius: const BorderRadius.all(Radius.circular(10)),
-                      child: Image.asset(
-                        'assets/images/listen_2010s_Pop.jpeg',
-                        fit: BoxFit.cover,
-                      ),
-                    )
+                  height: 150.0,
+                  width: 150.0,
+                  child: ClipRRect(
+                    borderRadius: const BorderRadius.all(Radius.circular(10)),
+                    child: Image.asset(
+                      'assets/images/listen_2010s_Pop.jpeg',
+                      fit: BoxFit.cover,
+                    ),
+                  ),
                 ),
                 const SizedBox(height: 10,),
                 const Text("2010s Pop"),
@@ -118,15 +118,15 @@ class listen_discover extends StatelessWidget {
             Column(
               children: [
                 SizedBox(
-                    height: 150.0,
-                    width: 150.0,
-                    child: ClipRRect(
-                      borderRadius: const BorderRadius.all(Radius.circular(10)),
-                      child: Image.asset(
-                        'assets/images/listen_au_my.jpeg',
-                        fit: BoxFit.cover,
-                      ),
-                    )
+                  height: 150.0,
+                  width: 150.0,
+                  child: ClipRRect(
+                    borderRadius: const BorderRadius.all(Radius.circular(10)),
+                    child: Image.asset(
+                      'assets/images/listen_au_my.jpeg',
+                      fit: BoxFit.cover,
+                    ),
+                  ),
                 ),
                 const SizedBox(height: 10,),
                 const Text("Nhạc Phim Âu Mỹ"),

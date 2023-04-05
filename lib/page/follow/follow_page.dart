@@ -78,19 +78,20 @@ class list_postsState extends State<follow_page> {
             SliverList(
               delegate: SliverChildBuilderDelegate(
                 (context, index) {
-                  var avatarnguoidang = data[index]['avatar_nguoi_dang'];
-                  var video_url = data[index]['video_url'];
-                  var thumbnail = data[index]['thumbnail'as String?];
+                  var avatarNguoiDang = data[index]['avatar_nguoi_dang'];
+                  //var video_url = data[index]['video_url'];
+                  var thumbnail = data[index]['thumbnail']as String?;
                   List<dynamic> pictures = data[index]['pictures'];
 
-                  var mota = data[index]['mo_ta'] as String?;
-                  var nguoidang = data[index]['nguoi_dang'];
-                  var tongsoluotlike = data[index]['tong_so_luot_like'] as int?;
-                  final VideoPlayerController _controller =
-                      VideoPlayerController.network(video_url);
+                  var moTa = data[index]['mo_ta'] as String?;
+                  var tongSoLuotComment = data[index]['tong_so_luot_comment'];
+                  var nguoiDang = data[index]['nguoi_dang'];
+                  var tongSoLuotLike = data[index]['tong_so_luot_like'] as int?;
+                  //final VideoPlayerController _controller =VideoPlayerController.network(video_url);
 
                   return Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Padding(
                         padding: const EdgeInsets.only(top: 0),
@@ -107,7 +108,7 @@ class list_postsState extends State<follow_page> {
                               borderRadius:
                                   const BorderRadius.all(Radius.circular(50)),
                               child: Image.network(
-                                avatarnguoidang,
+                                avatarNguoiDang,
                                 height: 50.0,
                                 width: 50.0,
                               ),
@@ -117,7 +118,7 @@ class list_postsState extends State<follow_page> {
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text(nguoidang),
+                                  Text(nguoiDang),
                                   const SizedBox(height: 10),
                                   const Text(
                                     "Đề xuất cho bạn",
@@ -133,7 +134,7 @@ class list_postsState extends State<follow_page> {
                       Padding(
                         padding: const EdgeInsets.fromLTRB(16, 10, 16, 0),
                         child: Text(
-                          mota ?? '',
+                          moTa ?? '',
                           maxLines: 6,
                         ),
                       ),
@@ -209,19 +210,34 @@ class list_postsState extends State<follow_page> {
                         ),
                       ),
 
-
-                      Padding(
-                        padding: const EdgeInsets.fromLTRB(16, 20, 16, 0),
-                        child: Row(
-                          children: [
-                            const Icon(
-                              Icons.favorite,
-                              color: Colors.purple,
+                      Row(
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(16, 20, 16, 0),
+                            child: Row(
+                              children: [
+                                const Icon(
+                                  Icons.favorite,
+                                  color: Colors.purple,
+                                ),
+                                Text(tongSoLuotLike?.toString() ?? ''),
+                              ],
                             ),
-                            Text(tongsoluotlike?.toString() ?? ''),
-                          ],
-                        ),
+                          ),
+
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(230, 20, 16, 0),
+                            child: Row(
+                              children: [
+                                Text(tongSoLuotComment?.toString() ?? ''),
+                                const SizedBox(width: 5,),
+                                const Text('bình luận'),
+                              ],
+                            ),
+                          ),
+                        ],
                       ),
+
                       Padding(
                         padding: const EdgeInsets.fromLTRB(16, 10, 16, 0),
                         child: Container(

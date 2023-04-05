@@ -9,6 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  http: ^0.13.5
   flutter_image_slideshow: ^0.1.4
   cupertino_icons: ^1.0.2
   fl_chart: ^0.61.0
@@ -17,6 +18,7 @@ dependencies:
   comment_box: ^0.0.18
   like_button: ^2.0.5
   miniplayer: ^1.0.1
+  chewie: ^1.4.0
 
 dev_dependencies:
   flutter_test:

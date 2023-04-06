@@ -18,7 +18,7 @@ dependencies:
   comment_box: ^0.0.18
   like_button: ^2.0.5
   miniplayer: ^1.0.1
-  chewie: ^1.4.0
+
 
 dev_dependencies:
   flutter_test:

@@ -5,6 +5,7 @@ import 'package:zing_app/page/follow/components/comment_posts.dart';
 import 'dart:convert';
 import 'package:zing_app/page/follow/components/category_follow.dart';
 import 'package:zing_app/page/follow/components/new_videos.dart';
+import 'package:zing_app/page/follow/components/posts_layout.dart';
 import 'package:zing_app/page/search.dart';
 
 // ignore: camel_case_types
@@ -23,6 +24,7 @@ class list_postsState extends State<follow_page> {
   bool _isColor = true;
   bool _isIcon = true;
 
+  //lấy api từ server thông qua phương thức post
   @override
   void initState() {
     super.initState();
@@ -78,17 +80,17 @@ class list_postsState extends State<follow_page> {
             SliverList(
               delegate: SliverChildBuilderDelegate(
                 (context, index) {
+                  List<dynamic> pictures = data[index]['pictures'];
                   var avatarNguoiDang = data[index]['avatar_nguoi_dang'];
                   //var video_url = data[index]['video_url'];
                   var thumbnail = data[index]['thumbnail']as String?;
-                  List<dynamic> pictures = data[index]['pictures'];
-
                   var moTa = data[index]['mo_ta'] as String?;
                   var tongSoLuotComment = data[index]['tong_so_luot_comment'];
                   var nguoiDang = data[index]['nguoi_dang'];
                   var tongSoLuotLike = data[index]['tong_so_luot_like'] as int?;
                   //final VideoPlayerController _controller =VideoPlayerController.network(video_url);
 
+                  final likeCount = tongSoLuotLike != null ? tongSoLuotLike + 1 : 0;
                   return Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -132,7 +134,7 @@ class list_postsState extends State<follow_page> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.fromLTRB(16, 10, 16, 0),
+                        padding: const EdgeInsets.fromLTRB(16, 10, 16, 10),
                         child: Text(
                           moTa ?? '',
                           maxLines: 6,
@@ -152,63 +154,12 @@ class list_postsState extends State<follow_page> {
                       //     }
                       //   },
                       // ),
+
+                      //Xử lý Layout hiển thị hình ảnh trong bài Post
+                      //từ 1 đến 5 ảnh
                       pictures.isEmpty
                           ? (thumbnail != null ? Image.network(thumbnail.toString()) : Container())
-                          : Padding(
-                        padding: const EdgeInsets.only(top: 20),
-                        child: pictures.length == 1
-                            ? SizedBox(
-                          child: Image.network(
-                            pictures[0],
-                            fit: BoxFit.cover,
-                          ),
-                        )
-                            : pictures.length == 2
-                            ? Row(
-                          children: [
-                            Expanded(
-                              child: Padding(
-                                padding: const EdgeInsets.only(right: 5),
-                                child: Image.network(
-                                  pictures[0],
-                                  height: 150,
-                                  width: 150,
-                                  fit: BoxFit.cover,
-                                ),
-                              ),
-                            ),
-                            Expanded(
-                              child: Padding(
-                                padding: const EdgeInsets.only(left: 5),
-                                child: Image.network(
-                                  pictures[1],
-                                  height: 150,
-                                  width: 150,
-                                  fit: BoxFit.cover,
-                                ),
-                              ),
-                            ),
-                          ],
-                        )
-                            : SizedBox(
-                          height: 150,
-                          child: ListView.builder(
-                            scrollDirection: Axis.horizontal,
-                            itemCount: pictures.length,
-                            itemBuilder: (context, index) {
-                              return Padding(
-                                padding: const EdgeInsets.only(right: 10),
-                                child: Image.network(
-                                  pictures[index],
-                                  height: 150,
-                                  width: 150,
-                                  fit: BoxFit.cover,
-                                ),
-                              );
-                            },
-                          ),
-                        ),
-                      ),
+                          : posts_layout(pictures: pictures),
 
                       Row(
                         children: [
@@ -268,6 +219,7 @@ class list_postsState extends State<follow_page> {
                                 setState(() {
                                   _isIcon = !_isIcon;
                                   _isColor = !_isColor;
+                                  likeCount;
                                 });
                               },
                             ),
@@ -311,3 +263,5 @@ class list_postsState extends State<follow_page> {
     );
   }
 }
+
+

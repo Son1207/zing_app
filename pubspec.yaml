@@ -18,6 +18,8 @@ dependencies:
   comment_box: ^0.0.18
   like_button: ^2.0.5
   miniplayer: ^1.0.1
+  photo_view: ^0.14.0
+  cached_network_image: ^3.2.3
 
 
 dev_dependencies:

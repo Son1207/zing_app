@@ -33,11 +33,11 @@ class list_postsState extends State<follow_page> {
 
   Future<void> getDataFromServer() async {
     final url = Uri.parse(
-        'http://m-grac.bsp.vn:8002/api/grac-mobile-app/v1.0.1/getVideoPostList');
+        'http://m-grac.bsp.vn:8002/api/grac-mobile-app/v1.0.1/getPostList');
     final response = await http.post(url, body: {
       "order_by": "DESC",
       "current_page": "1",
-      "number_of_record": "45",
+      "number_of_record": "8",
       "secret_key": "{{secret_key}}"
     });
 
@@ -107,14 +107,21 @@ class list_postsState extends State<follow_page> {
                         child: Row(
                           children: [
                             ClipRRect(
-                              borderRadius:
-                                  const BorderRadius.all(Radius.circular(50)),
-                              child: Image.network(
-                                avatarNguoiDang,
+                              borderRadius: const BorderRadius.all(Radius.circular(50)),
+                              child:
+                              // avatarNguoiDang != null
+                              //     ? Image.network(
+                              //   avatarNguoiDang,
+                              //   height: 50.0,
+                              //   width: 50.0,
+                              // ) :
+                              Image.asset(
+                                'assets/images/zing_mp3.png', // ảnh mặc định
                                 height: 50.0,
                                 width: 50.0,
                               ),
                             ),
+
                             Padding(
                               padding: const EdgeInsets.only(left: 10),
                               child: Column(

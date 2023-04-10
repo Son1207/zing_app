@@ -100,14 +100,11 @@ class new_videos extends StatelessWidget {
                     ),
                   ),
                 ),
-
               ],
             ),
           )
-
         ],
       )
-
     );
   }
 }

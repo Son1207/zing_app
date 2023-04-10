@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:zing_app/page/follow/components/image_view.dart';
 
 // ignore: camel_case_types
 class posts_layout extends StatelessWidget {
@@ -14,98 +15,183 @@ class posts_layout extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(top: 20),
         child: pictures.length == 1
-            ? SizedBox(
+            ? GestureDetector(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => ImageView(pictures: pictures[0]),
+              ),
+            );
+          },
+              child: SizedBox(
           child: Image.network(
-            pictures[0],
-            fit: BoxFit.cover,
+              pictures[0],
+              fit: BoxFit.cover,
           ),
-        ) : pictures.length == 2
+        ),
+            ) : pictures.length == 2
             ? Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Expanded(
-              child: Padding(
-                padding: const EdgeInsets.only(right: 5),
-                child: Image.network(
-                  pictures[0],
-                  height: 150,
-                  width: 150,
-                  fit: BoxFit.cover,
+            GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => ImageView(pictures: pictures[0]),
+                  ),
+                );
+              },
+              child: Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.only(right: 0),
+                  child: Image.network(
+                    pictures[0],
+                    height: 300,
+                    width: 200,
+                    fit: BoxFit.cover,
+                  ),
                 ),
               ),
             ),
-            Expanded(
-              child: Padding(
-                padding: const EdgeInsets.only(left: 5),
-                child: Image.network(
-                  pictures[1],
-                  height: 150,
-                  width: 150,
-                  fit: BoxFit.cover,
+            GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => ImageView(pictures: pictures[1]),
+                  ),
+                );
+              },
+              child: Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 5),
+                  child: Image.network(
+                    pictures[1],
+                    height: 300,
+                    width: 200,
+                    fit: BoxFit.cover,
+                  ),
                 ),
               ),
             ),
           ],
         ) : pictures.length == 3
-            ? Column(
+            ? Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            SizedBox(
-              height: 150,
-              child: Image.network(
-                pictures[0],
-                fit: BoxFit.cover,
-              ),
-            ),
-            const SizedBox(height: 10),
-            Row(
-              children: [
-                Expanded(
-                  child: Padding(
-                    padding: const EdgeInsets.only(right: 5),
+            Column(
+              children:[
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => ImageView(pictures: pictures[0]),
+                      ),
+                    );
+                  },
+                  child: SizedBox(
                     child: Image.network(
-                      pictures[1],
-                      height: 150,
+                      pictures[0],
+                      height: 145,
+                      width: 200,
                       fit: BoxFit.cover,
                     ),
                   ),
                 ),
-                Expanded(
-                  child: Padding(
-                    padding: const EdgeInsets.only(left: 5),
+                SizedBox(height: 10,),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => ImageView(pictures: pictures[1]),
+                      ),
+                    );
+                  },
+                  child: SizedBox(
                     child: Image.network(
-                      pictures[2],
-                      height: 150,
+                      pictures[1],
+                      height: 145,
+                      width: 200,
                       fit: BoxFit.cover,
                     ),
                   ),
                 ),
               ],
             ),
+            SizedBox(width: 10,),
+            GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => ImageView(pictures: pictures[2]),
+                  ),
+                );
+              },
+              child: Padding(
+                padding: const EdgeInsets.only(right: 0),
+                child: Image.network(
+                  pictures[2],
+                  height: 300,
+                  width: 195,
+                  fit: BoxFit.cover,
+                ),
+              ),
+            ),
+
           ],
         ): pictures.length == 4
             ? Column(
           children: [
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Expanded(
-                  child: Padding(
-                    padding: const EdgeInsets.only(right: 5),
-                    child: SizedBox(
-                      height: 150,
-                      child: Image.network(
-                        pictures[0],
-                        fit: BoxFit.cover,
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => ImageView(pictures: pictures[0]),
+                      ),
+                    );
+                  },
+                  child: Expanded(
+                    child: Padding(
+                      padding: const EdgeInsets.only(right: 0),
+                      child: SizedBox(
+                        height: 150,
+                        width: 200,
+                        child: Image.network(
+                          pictures[0],
+                          fit: BoxFit.cover,
+                        ),
                       ),
                     ),
                   ),
                 ),
-                Expanded(
-                  child: Padding(
-                    padding: const EdgeInsets.only(left: 5),
-                    child: SizedBox(
-                      height: 150,
-                      child: Image.network(
-                        pictures[1],
-                        fit: BoxFit.cover,
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => ImageView(pictures: pictures[1]),
+                      ),
+                    );
+                  },
+                  child: Expanded(
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 0),
+                      child: SizedBox(
+                        height: 150,
+                        width: 200,
+                        child: Image.network(
+                          pictures[1],
+                          fit: BoxFit.cover,
+                        ),
                       ),
                     ),
                   ),
@@ -113,28 +199,52 @@ class posts_layout extends StatelessWidget {
               ],
             ),
             const SizedBox(height: 10),
+
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Expanded(
-                  child: Padding(
-                    padding: const EdgeInsets.only(right: 5),
-                    child: SizedBox(
-                      height: 150,
-                      child: Image.network(
-                        pictures[2],
-                        fit: BoxFit.cover,
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => ImageView(pictures: pictures[2]),
+                      ),
+                    );
+                  },
+                  child: Expanded(
+                    child: Padding(
+                      padding: const EdgeInsets.only(right: 0),
+                      child: SizedBox(
+                        height: 150,
+                        width: 200,
+                        child: Image.network(
+                          pictures[2],
+                          fit: BoxFit.cover,
+                        ),
                       ),
                     ),
                   ),
                 ),
-                Expanded(
-                  child: Padding(
-                    padding: const EdgeInsets.only(left: 5),
-                    child: SizedBox(
-                      height: 150,
-                      child: Image.network(
-                        pictures[3],
-                        fit: BoxFit.cover,
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => ImageView(pictures: pictures[3]),
+                      ),
+                    );
+                  },
+                  child: Expanded(
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 0),
+                      child: SizedBox(
+                        height: 150,
+                        width: 200,
+                        child: Image.network(
+                          pictures[3],
+                          fit: BoxFit.cover,
+                        ),
                       ),
                     ),
                   ),
@@ -143,67 +253,115 @@ class posts_layout extends StatelessWidget {
             ),
           ],
         ) : pictures.length == 5
-            ? Column(
+            ? Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Row(
-              children: [
-                Expanded(
-                  child: Padding(
-                    padding: const EdgeInsets.only(right: 5),
+            Column(
+              children:[
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => ImageView(pictures: pictures[0]),
+                      ),
+                    );
+                  },
+                  child: SizedBox(
+                    height: 150,
                     child: Image.network(
                       pictures[0],
-                      height: 150,
+                      height: 145,
+                      width: 200,
                       fit: BoxFit.cover,
                     ),
                   ),
                 ),
-                Expanded(
-                  child: Padding(
-                    padding: const EdgeInsets.only(left: 5),
+                SizedBox(height: 10,),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => ImageView(pictures: pictures[1]),
+                      ),
+                    );
+                  },
+                  child: SizedBox(
+                    height: 150,
                     child: Image.network(
                       pictures[1],
-                      height: 150,
+                      height: 145,
+                      width: 200,
                       fit: BoxFit.cover,
                     ),
                   ),
                 ),
               ],
             ),
-            const SizedBox(height: 10),
-            Row(
+            Column(
               children: [
-                Expanded(
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => ImageView(pictures: pictures[2]),
+                      ),
+                    );
+                  },
                   child: Padding(
-                    padding: const EdgeInsets.only(right: 5),
+                    padding: const EdgeInsets.only(right: 0),
                     child: Image.network(
                       pictures[2],
-                      height: 150,
+                      height: 97,
+                      width: 195,
                       fit: BoxFit.cover,
                     ),
                   ),
                 ),
-                Expanded(
+                SizedBox(height: 10,),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => ImageView(pictures: pictures[3]),
+                      ),
+                    );
+                  },
                   child: Padding(
-                    padding: const EdgeInsets.only(left: 5, right: 5),
+                    padding: const EdgeInsets.only(right: 0),
                     child: Image.network(
                       pictures[3],
-                      height: 150,
+                      height: 98,
+                      width: 195,
                       fit: BoxFit.cover,
                     ),
                   ),
                 ),
-                Expanded(
+                SizedBox(height: 10,),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => ImageView(pictures: pictures[4]),
+                      ),
+                    );
+                  },
                   child: Padding(
-                    padding: const EdgeInsets.only(left: 5),
+                    padding: const EdgeInsets.only(right: 0),
                     child: Image.network(
                       pictures[4],
-                      height: 150,
+                      height: 97,
+                      width: 195,
                       fit: BoxFit.cover,
                     ),
                   ),
                 ),
               ],
-            ),
+            )
           ],
         ) : Column(
           children: [

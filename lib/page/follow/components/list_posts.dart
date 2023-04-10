@@ -171,8 +171,6 @@ class list_postsState extends State<list_posts> {
           // );
         },
       ),
-
     );
-
   }
 }

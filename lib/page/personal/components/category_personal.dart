@@ -11,13 +11,13 @@ class category_personal extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.fromLTRB(16, 20, 16, 0),
       child: SizedBox(
-        height: 110.0,
+        height: 120.0,
         child: ListView(
           scrollDirection: Axis.horizontal,
           children: [
             Container(
               margin: const EdgeInsets.only(top: 0),
-              width: 150.0,
+              width: 160.0,
               padding: const EdgeInsets.fromLTRB(10, 10, 20, 10),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10.0),

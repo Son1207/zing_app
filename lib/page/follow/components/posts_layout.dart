@@ -49,7 +49,7 @@ class posts_layout extends StatelessWidget {
                   child: Image.network(
                     pictures[0],
                     height: 300,
-                    width: 200,
+                    width: MediaQuery.of(context).size.width / 2 - 5,
                     fit: BoxFit.cover,
                   ),
                 ),
@@ -70,7 +70,7 @@ class posts_layout extends StatelessWidget {
                   child: Image.network(
                     pictures[1],
                     height: 300,
-                    width: 200,
+                    width: MediaQuery.of(context).size.width / 2 - 5,
                     fit: BoxFit.cover,
                   ),
                 ),
@@ -96,7 +96,7 @@ class posts_layout extends StatelessWidget {
                     child: Image.network(
                       pictures[0],
                       height: 145,
-                      width: 200,
+                      width: 190,
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -115,7 +115,7 @@ class posts_layout extends StatelessWidget {
                     child: Image.network(
                       pictures[1],
                       height: 145,
-                      width: 200,
+                      width: 190,
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -137,7 +137,7 @@ class posts_layout extends StatelessWidget {
                 child: Image.network(
                   pictures[2],
                   height: 300,
-                  width: 195,
+                  width: MediaQuery.of(context).size.width / 2 - 5,
                   fit: BoxFit.cover,
                 ),
               ),
@@ -164,7 +164,7 @@ class posts_layout extends StatelessWidget {
                       padding: const EdgeInsets.only(right: 0),
                       child: SizedBox(
                         height: 150,
-                        width: 200,
+                        width: MediaQuery.of(context).size.width / 2 - 5,
                         child: Image.network(
                           pictures[0],
                           fit: BoxFit.cover,
@@ -187,7 +187,7 @@ class posts_layout extends StatelessWidget {
                       padding: const EdgeInsets.only(left: 0),
                       child: SizedBox(
                         height: 150,
-                        width: 200,
+                        width: MediaQuery.of(context).size.width / 2 - 5,
                         child: Image.network(
                           pictures[1],
                           fit: BoxFit.cover,
@@ -217,7 +217,7 @@ class posts_layout extends StatelessWidget {
                       padding: const EdgeInsets.only(right: 0),
                       child: SizedBox(
                         height: 150,
-                        width: 200,
+                        width: MediaQuery.of(context).size.width / 2 - 5,
                         child: Image.network(
                           pictures[2],
                           fit: BoxFit.cover,
@@ -240,7 +240,7 @@ class posts_layout extends StatelessWidget {
                       padding: const EdgeInsets.only(left: 0),
                       child: SizedBox(
                         height: 150,
-                        width: 200,
+                        width: MediaQuery.of(context).size.width / 2 - 5,
                         child: Image.network(
                           pictures[3],
                           fit: BoxFit.cover,
@@ -272,7 +272,7 @@ class posts_layout extends StatelessWidget {
                     child: Image.network(
                       pictures[0],
                       height: 145,
-                      width: 200,
+                      width: MediaQuery.of(context).size.width / 2 - 5,
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -292,7 +292,7 @@ class posts_layout extends StatelessWidget {
                     child: Image.network(
                       pictures[1],
                       height: 145,
-                      width: 200,
+                      width: MediaQuery.of(context).size.width / 2 - 5,
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -315,7 +315,7 @@ class posts_layout extends StatelessWidget {
                     child: Image.network(
                       pictures[2],
                       height: 97,
-                      width: 195,
+                      width: MediaQuery.of(context).size.width / 2 - 5,
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -335,7 +335,7 @@ class posts_layout extends StatelessWidget {
                     child: Image.network(
                       pictures[3],
                       height: 98,
-                      width: 195,
+                      width: MediaQuery.of(context).size.width / 2 - 5,
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -355,7 +355,7 @@ class posts_layout extends StatelessWidget {
                     child: Image.network(
                       pictures[4],
                       height: 97,
-                      width: 195,
+                      width: MediaQuery.of(context).size.width / 2 - 5,
                       fit: BoxFit.cover,
                     ),
                   ),

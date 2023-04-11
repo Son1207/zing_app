@@ -37,7 +37,7 @@ class list_postsState extends State<follow_page> {
     final response = await http.post(url, body: {
       "order_by": "DESC",
       "current_page": "1",
-      "number_of_record": "8",
+      "number_of_record": "5",
       "secret_key": "{{secret_key}}"
     });
 
@@ -141,7 +141,7 @@ class list_postsState extends State<follow_page> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.fromLTRB(16, 10, 16, 10),
+                        padding: const EdgeInsets.fromLTRB(16, 10, 16, 0),
                         child: Text(
                           moTa ?? '',
                           maxLines: 6,

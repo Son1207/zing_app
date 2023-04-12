@@ -20,7 +20,7 @@ class posts_layout extends StatelessWidget {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => ImageView(pictures: pictures[0]),
+                builder: (context) => ImageView(pictures: pictures),
               ),
             );
           },
@@ -39,7 +39,7 @@ class posts_layout extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => ImageView(pictures: pictures[0]),
+                    builder: (context) => ImageView(pictures: pictures,initialIndex: pictures.indexOf(pictures[0])),
                   ),
                 );
               },
@@ -60,7 +60,7 @@ class posts_layout extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => ImageView(pictures: pictures[1]),
+                    builder: (context) => ImageView(pictures: pictures,initialIndex: pictures.indexOf(pictures[1])),
                   ),
                 );
               },
@@ -88,7 +88,7 @@ class posts_layout extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => ImageView(pictures: pictures[0]),
+                        builder: (context) => ImageView(pictures: pictures,initialIndex: pictures.indexOf(pictures[0])),
                       ),
                     );
                   },
@@ -107,7 +107,7 @@ class posts_layout extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => ImageView(pictures: pictures[1]),
+                        builder: (context) => ImageView(pictures: pictures,initialIndex: pictures.indexOf(pictures[1])),
                       ),
                     );
                   },
@@ -128,7 +128,7 @@ class posts_layout extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => ImageView(pictures: pictures[2]),
+                    builder: (context) => ImageView(pictures: pictures,initialIndex: pictures.indexOf(pictures[2])),
                   ),
                 );
               },
@@ -155,7 +155,7 @@ class posts_layout extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => ImageView(pictures: pictures[0]),
+                        builder: (context) => ImageView(pictures: pictures,initialIndex: pictures.indexOf(pictures[0])),
                       ),
                     );
                   },
@@ -178,7 +178,7 @@ class posts_layout extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => ImageView(pictures: pictures[1]),
+                        builder: (context) => ImageView(pictures: pictures,initialIndex: pictures.indexOf(pictures[1])),
                       ),
                     );
                   },
@@ -208,7 +208,7 @@ class posts_layout extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => ImageView(pictures: pictures[2]),
+                        builder: (context) => ImageView(pictures: pictures, initialIndex: pictures.indexOf(pictures[2])),
                       ),
                     );
                   },
@@ -231,7 +231,7 @@ class posts_layout extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => ImageView(pictures: pictures[3]),
+                        builder: (context) => ImageView(pictures: pictures,initialIndex: pictures.indexOf(pictures[3])),
                       ),
                     );
                   },
@@ -263,7 +263,7 @@ class posts_layout extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => ImageView(pictures: pictures[0]),
+                        builder: (context) => ImageView(pictures: pictures,initialIndex: pictures.indexOf(pictures[0])),
                       ),
                     );
                   },
@@ -283,7 +283,7 @@ class posts_layout extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => ImageView(pictures: pictures[1]),
+                        builder: (context) => ImageView(pictures: pictures,initialIndex: pictures.indexOf(pictures[1])),
                       ),
                     );
                   },
@@ -306,7 +306,7 @@ class posts_layout extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => ImageView(pictures: pictures[2]),
+                        builder: (context) => ImageView(pictures: pictures,initialIndex: pictures.indexOf(pictures[2])),
                       ),
                     );
                   },
@@ -326,7 +326,7 @@ class posts_layout extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => ImageView(pictures: pictures[3]),
+                        builder: (context) => ImageView(pictures: pictures,initialIndex: pictures.indexOf(pictures[3])),
                       ),
                     );
                   },
@@ -346,7 +346,7 @@ class posts_layout extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => ImageView(pictures: pictures[4]),
+                        builder: (context) => ImageView(pictures: pictures,initialIndex: pictures.indexOf(pictures[4])),
                       ),
                     );
                   },

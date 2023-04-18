@@ -1,17 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'package:zing_app/page/follow/components/comment_posts.dart';
 import 'dart:convert';
 
-
-// ignore: camel_case_types
-class list_posts extends StatefulWidget {
-  const list_posts({Key? key}) : super(key: key);
+class ListPosts extends StatefulWidget {
+  const ListPosts({Key? key}) : super(key: key);
   @override
-  list_postsState createState() => list_postsState();
+  ListPostsState createState() => ListPostsState();
 }
-// ignore: camel_case_types
-class list_postsState extends State<list_posts> {
+class ListPostsState extends State<ListPosts> {
   List<dynamic> data = [];
 
   bool _isColor = true;
@@ -53,7 +49,7 @@ class list_postsState extends State<list_posts> {
         itemBuilder: (context, index) {
           var avatarnguoidang = data[index]['avatar_nguoi_dang'];
           var thumbnail = data[index]['thumbnail'];
-          var mota = data?[index]['mo_ta'] as String?;
+          var mota = data[index]['mo_ta'] as String?;
           var nguoidang =data[index]['nguoi_dang'];
           var tongsoluotlike = data[index]['tong_so_luot_like']as int?;
           return SingleChildScrollView(
@@ -87,8 +83,8 @@ class list_postsState extends State<list_posts> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(nguoidang),
-                            SizedBox(height: 10),
-                            Text("Đề xuất cho bạn",style: TextStyle(color: Color.fromRGBO(90, 90, 90, 0.9)),),
+                            const SizedBox(height: 10),
+                            const Text("Đề xuất cho bạn",style: TextStyle(color: Color.fromRGBO(90, 90, 90, 0.9)),),
                           ],
                         ),
                       ),
@@ -97,7 +93,7 @@ class list_postsState extends State<list_posts> {
                 ),
 
                 Padding(
-                  padding: EdgeInsets.fromLTRB( 16, 10, 16, 0),
+                  padding: const EdgeInsets.fromLTRB( 16, 10, 16, 0),
                   child: Text(mota ?? '',maxLines: 6,),
                 ),
                 Padding(

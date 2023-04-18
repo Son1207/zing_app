@@ -5,15 +5,14 @@ import 'package:zing_app/page/discover/components/recently_discover.dart';
 import 'package:zing_app/page/discover/components/slide_show.dart';
 import 'package:zing_app/page/search.dart';
 
-// ignore: camel_case_types
-class discover_page extends StatefulWidget {
-  const discover_page({super.key});
+class DiscoverPage extends StatefulWidget {
+  const DiscoverPage({super.key});
 
   @override
-  State<discover_page> createState() => _discover_pageState();
+  State<DiscoverPage> createState() => _DiscoverPageState();
 }
 // ignore: camel_case_types
-class _discover_pageState extends State<discover_page> {
+class _DiscoverPageState extends State<DiscoverPage> {
 
   @override
   Widget build(BuildContext context) {
@@ -24,9 +23,9 @@ class _discover_pageState extends State<discover_page> {
           padding: const EdgeInsets.fromLTRB( 0, 40, 0, 0),
           child: Column(
             children: [
-              const search(),
-              const slide_show(),
-              const category_discover(),
+              const Search(),
+              const SlideShow(),
+              const CategoryDiscover(),
 
               const Padding(
                 padding: EdgeInsets.fromLTRB(16, 20, 16, 0),
@@ -35,7 +34,7 @@ class _discover_pageState extends State<discover_page> {
                   child: Text("Nghe gần đây",style: TextStyle(fontSize: 20)),
                 ),
               ),
-              const recently_discover(),
+              const RecentlyDiscover(),
 
               Padding(
                 padding: const EdgeInsets.fromLTRB(16, 30, 16, 0),
@@ -46,7 +45,7 @@ class _discover_pageState extends State<discover_page> {
                   ],
                 ),
               ),
-              const listen_discover(),
+              const ListenDiscover(),
             ],
           ),
         ),

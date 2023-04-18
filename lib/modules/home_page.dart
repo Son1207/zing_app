@@ -15,11 +15,11 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   int index = 0;
   final screens = const [
-    personal_page(),
-    discover_page(),
-    zingchart_page(),
-    radio_page(),
-    follow_page(),
+    PersonalPage(),
+    DiscoverPage(),
+    ZingChartPage(),
+    RadioPage(),
+    FollowPage(),
   ];
 
   @override

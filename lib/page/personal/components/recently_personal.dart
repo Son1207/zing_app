@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 
-// ignore: camel_case_types
-class recently_personal extends StatelessWidget {
-  const recently_personal({
+class RecentlyPersonal extends StatelessWidget {
+  const RecentlyPersonal({
     super.key,
   });
 

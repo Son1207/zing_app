@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:zing_app/page/follow/components/list_videos.dart';
 
-// ignore: camel_case_types
-class category_follow extends StatelessWidget {
-  const category_follow({
+
+class CategoryFollow extends StatelessWidget {
+  const CategoryFollow({
     super.key,
   });
 
@@ -33,7 +33,7 @@ class category_follow extends StatelessWidget {
                 borderRadius: BorderRadius.circular(20),
               ),
             ),
-            onPressed: (){Navigator.pushNamed(context, List_Videos.routeName);},
+            onPressed: (){Navigator.pushNamed(context, ListVideos.routeName);},
             icon: const Icon(Icons.video_collection,color: Colors.blueAccent,),
             label: const Text('Video',style: TextStyle(color: Colors.black, fontSize: 12),),
           ),

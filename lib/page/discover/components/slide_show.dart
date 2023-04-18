@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_image_slideshow/flutter_image_slideshow.dart';
 
-// ignore: camel_case_types
-class slide_show extends StatelessWidget {
-  const slide_show({
+class SlideShow extends StatelessWidget {
+  const SlideShow({
     super.key,
   });
 

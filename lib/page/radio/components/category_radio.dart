@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 
-// ignore: camel_case_types
-class category_radio extends StatelessWidget {
-  const category_radio({
+class CategoryRadio extends StatelessWidget {
+  const CategoryRadio({
     super.key,
   });
 

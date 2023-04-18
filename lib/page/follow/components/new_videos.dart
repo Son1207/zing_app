@@ -5,9 +5,8 @@ import 'package:zing_app/page/follow/components/list_news_video.dart';
 
 import 'list_new_video/list_new_videos3.dart';
 
-// ignore: camel_case_types
-class new_videos extends StatelessWidget {
-  const new_videos({
+class NewVideos extends StatelessWidget {
+  const NewVideos({
     super.key,
   });
 
@@ -32,7 +31,7 @@ class new_videos extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.fromLTRB( 8, 0, 0, 0),
                   child: TextButton(
-                    onPressed: (){Navigator.pushNamed(context, List_News_Video.routeName);},
+                    onPressed: (){Navigator.pushNamed(context, ListNewsVideo.routeName);},
                     child: SizedBox(
                       height: 160.0,
                       width: 100.0,
@@ -50,7 +49,7 @@ class new_videos extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.all(0),
                   child: TextButton(
-                    onPressed: (){Navigator.pushNamed(context, List_News_Video1.routeName);},
+                    onPressed: (){Navigator.pushNamed(context, ListNewsVideo1.routeName);},
                     child: SizedBox(
                       height: 160.0,
                       width: 100.0,
@@ -68,7 +67,7 @@ class new_videos extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.all(0),
                   child: TextButton(
-                    onPressed: (){Navigator.pushNamed(context, List_News_Video2.routeName);},
+                    onPressed: (){Navigator.pushNamed(context, ListNewsVideo2.routeName);},
                     child: SizedBox(
                       height: 160.0,
                       width: 100.0,
@@ -86,7 +85,7 @@ class new_videos extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.fromLTRB( 0, 0, 8, 0),
                   child: TextButton(
-                    onPressed: (){Navigator.pushNamed(context, List_News_Video3.routeName);},
+                    onPressed: (){Navigator.pushNamed(context, ListNewsVideo3.routeName);},
                     child: SizedBox(
                       height: 160.0,
                       width: 100.0,

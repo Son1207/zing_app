@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:zing_app/modules/home_page.dart';
 
 // ignore: camel_case_types
-class detail_notification extends StatelessWidget {
+class DetailNotification extends StatelessWidget {
   static String routeName="/detail_notification";
-  const detail_notification({Key? key}) : super(key: key);
+  const DetailNotification({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

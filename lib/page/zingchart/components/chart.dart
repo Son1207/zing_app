@@ -2,19 +2,18 @@ import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:zing_app/page/search.dart';
 
-// ignore: camel_case_types
-class chart extends StatefulWidget {
-  const chart({super.key});
+class Chart extends StatefulWidget {
+  const Chart({super.key});
   final Color leftBarColor = Colors.blue;
   final Color rightBarColor = Colors.red;
   final Color avgColor =
       Colors.orange;
   @override
-  State<StatefulWidget> createState() => chartState();
+  State<StatefulWidget> createState() => ChartState();
 }
 
 // ignore: camel_case_types
-class chartState extends State<chart> {
+class ChartState extends State<Chart> {
   final double width = 7;
 
   late List<BarChartGroupData> rawBarGroups;
@@ -60,7 +59,7 @@ class chartState extends State<chart> {
               padding: const EdgeInsets.only(top: 24),
               child: Column(
                   children: const[
-                    search(),
+                    Search(),
                   ]
               ),
             ),

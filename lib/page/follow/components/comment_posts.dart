@@ -1,17 +1,16 @@
 import 'package:comment_box/comment/comment.dart';
 import 'package:flutter/material.dart';
 
-// ignore: camel_case_types
-class Comment_Posts extends StatefulWidget {
+class CommentPosts extends StatefulWidget {
   static String routeName="/comments";
 
-  const Comment_Posts({super.key});
+  const CommentPosts({super.key});
   @override
   // ignore: library_private_types_in_public_api
-  _TestMeState createState() => _TestMeState();
+  _CommentPostsState createState() => _CommentPostsState();
 }
 
-class _TestMeState extends State<Comment_Posts> {
+class _CommentPostsState extends State<CommentPosts> {
   final formKey = GlobalKey<FormState>();
   final TextEditingController commentController = TextEditingController();
   List filedata = [

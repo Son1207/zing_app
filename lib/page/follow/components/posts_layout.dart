@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:zing_app/page/follow/components/image_view.dart';
 
-// ignore: camel_case_types
-class posts_layout extends StatelessWidget {
-  const posts_layout({
+class PostsLayout extends StatelessWidget {
+  const PostsLayout({
     super.key,
     required this.pictures,
   });
@@ -101,7 +100,7 @@ class posts_layout extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(height: 10,),
+                const SizedBox(height: 10,),
                 GestureDetector(
                   onTap: () {
                     Navigator.push(
@@ -122,7 +121,7 @@ class posts_layout extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(width: 10,),
+            const SizedBox(width: 10,),
             GestureDetector(
               onTap: () {
                 Navigator.push(
@@ -277,7 +276,7 @@ class posts_layout extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(height: 10,),
+                const SizedBox(height: 10,),
                 GestureDetector(
                   onTap: () {
                     Navigator.push(
@@ -320,7 +319,7 @@ class posts_layout extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(height: 10,),
+                const SizedBox(height: 10,),
                 GestureDetector(
                   onTap: () {
                     Navigator.push(
@@ -340,7 +339,7 @@ class posts_layout extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(height: 10,),
+                const SizedBox(height: 10,),
                 GestureDetector(
                   onTap: () {
                     Navigator.push(

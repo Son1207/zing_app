@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 
-// ignore: camel_case_types
-class category_personal extends StatelessWidget {
-  const category_personal({
+class CategoryPersonal extends StatelessWidget {
+  const CategoryPersonal({
     super.key,
   });
 

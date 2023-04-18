@@ -8,16 +8,15 @@ import 'package:zing_app/page/follow/components/new_videos.dart';
 import 'package:zing_app/page/follow/components/posts_layout.dart';
 import 'package:zing_app/page/search.dart';
 
-// ignore: camel_case_types
-class follow_page extends StatefulWidget {
+class FollowPage extends StatefulWidget {
   static String routeName = "/follow_page";
-  const follow_page({Key? key}) : super(key: key);
+  const FollowPage({Key? key}) : super(key: key);
   @override
-  list_postsState createState() => list_postsState();
+  FollowPageState createState() => FollowPageState();
 }
 
 // ignore: camel_case_types
-class list_postsState extends State<follow_page> {
+class FollowPageState extends State<FollowPage> {
   List<dynamic> data = [];
   late VideoPlayerController _controller;
 
@@ -70,9 +69,9 @@ class list_postsState extends State<follow_page> {
               sliver: SliverToBoxAdapter(
                 child: Column(
                   children: const [
-                    search(),
-                    category_follow(),
-                    new_videos(),
+                    Search(),
+                    CategoryFollow(),
+                    NewVideos(),
                   ],
                 ),
               ),
@@ -107,19 +106,18 @@ class list_postsState extends State<follow_page> {
                         child: Row(
                           children: [
                             ClipRRect(
-                              borderRadius: const BorderRadius.all(Radius.circular(50)),
-                              child:
-                              // avatarNguoiDang != null
-                              //     ? Image.network(
-                              //   avatarNguoiDang,
-                              //   height: 50.0,
-                              //   width: 50.0,
-                              // ) :
-                              Image.asset(
-                                'assets/images/zing_mp3.png', // ảnh mặc định
+                              borderRadius: const BorderRadius.all(Radius.circular(80)),
+                              child: Image.network(
+                                avatarNguoiDang,
                                 height: 50.0,
                                 width: 50.0,
+                                fit: BoxFit.cover,
                               ),
+                              // :Image.asset(
+                              //   'assets/images/zing_mp3.png', // ảnh mặc định
+                              //   height: 50.0,
+                              //   width: 50.0,
+                              // ),
                             ),
 
                             Padding(
@@ -166,7 +164,7 @@ class list_postsState extends State<follow_page> {
                       //từ 1 đến 5 ảnh
                       pictures.isEmpty
                           ? (thumbnail != null ? Image.network(thumbnail.toString()) : Container())
-                          : posts_layout(pictures: pictures),
+                          : PostsLayout(pictures: pictures),
 
                       Row(
                         children: [
@@ -241,7 +239,7 @@ class list_postsState extends State<follow_page> {
                               ),
                               onPressed: () {
                                 Navigator.pushNamed(
-                                    context, Comment_Posts.routeName);
+                                    context, CommentPosts.routeName);
                               },
                             ),
                             TextButton.icon(

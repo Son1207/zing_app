@@ -1,16 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:zing_app/page/zingchart/components/chart.dart';
 
-// ignore: camel_case_types
-class zingchart_page extends StatelessWidget {
-  const zingchart_page({super.key});
+class ZingChartPage extends StatelessWidget {
+  const ZingChartPage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Stack(
         children: const[
-          chart(),
+          Chart(),
         ],
       ),
     );

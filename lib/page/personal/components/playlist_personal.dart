@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 
-// ignore: camel_case_types
-class playlist_personal extends StatelessWidget {
-  const playlist_personal({
+class PlaylistPersonal extends StatelessWidget {
+  const PlaylistPersonal({
     super.key,
   });
 

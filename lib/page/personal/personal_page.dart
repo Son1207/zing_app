@@ -4,9 +4,8 @@ import 'package:zing_app/page/personal/components/playlist_personal.dart';
 import 'package:zing_app/page/personal/components/recently_personal.dart';
 import 'package:zing_app/page/search.dart';
 
-// ignore: camel_case_types
-class personal_page extends StatelessWidget {
-  const personal_page({super.key});
+class PersonalPage extends StatelessWidget {
+  const PersonalPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +17,7 @@ class personal_page extends StatelessWidget {
           padding: const EdgeInsets.fromLTRB( 0, 40, 0, 0),
           child: Column(
             children: [
-              const search(),
+              const Search(),
 
               const Padding(
                 padding: EdgeInsets.fromLTRB( 16, 20, 16, 0),
@@ -27,7 +26,7 @@ class personal_page extends StatelessWidget {
                   child: Text("Thư viện",style: TextStyle(fontSize: 25)),
                 ),
               ),
-              const category_personal(),
+              const CategoryPersonal(),
 
               Padding(
                 padding: const EdgeInsets.fromLTRB( 16, 30, 16, 0),
@@ -39,7 +38,7 @@ class personal_page extends StatelessWidget {
                 ),
               ),
 
-              const recently_personal(),
+              const RecentlyPersonal(),
 
               Padding(
                 padding: const EdgeInsets.fromLTRB( 16, 30, 16, 0),
@@ -60,7 +59,7 @@ class personal_page extends StatelessWidget {
                 ),
               ),
 
-              const playlist_personal(),
+              const PlaylistPersonal(),
 
             ],
           ),

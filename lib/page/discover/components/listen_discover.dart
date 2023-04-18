@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 
-// ignore: camel_case_types
-class listen_discover extends StatelessWidget {
-  const listen_discover({
+class ListenDiscover extends StatelessWidget {
+  const ListenDiscover({
     super.key,
   });
 

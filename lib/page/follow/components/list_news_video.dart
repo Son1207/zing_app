@@ -1,17 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:video_box/video_box.dart';
 
-// ignore: camel_case_types
-class List_News_Video extends StatefulWidget {
+class ListNewsVideo extends StatefulWidget {
   static String routeName="/news_video";
 
-  const List_News_Video({super.key});
+  const ListNewsVideo({super.key});
   @override
-  List_News_VideoState createState() => List_News_VideoState();
+  ListNewsVideoState createState() => ListNewsVideoState();
 }
 
 // ignore: camel_case_types
-class List_News_VideoState extends State<List_News_Video> {
+class ListNewsVideoState extends State<ListNewsVideo> {
   List<VideoController> vcs = [];
 
   @override

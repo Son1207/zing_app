@@ -14,7 +14,7 @@ class PersonalPage extends StatelessWidget {
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Padding(
-          padding: const EdgeInsets.fromLTRB( 0, 40, 0, 0),
+          padding: const EdgeInsets.fromLTRB( 0, 10, 0, 0),
           child: Column(
             children: [
               const Search(),

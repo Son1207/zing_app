@@ -25,7 +25,6 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         Home.routeName:(context) => const Home(),
-        FollowPage.routeName:(context) => const FollowPage(),
         ListVideos.routeName:(context) => const ListVideos(),
         CommentPosts.routeName:(context) => const CommentPosts(),
         ListNewsVideo.routeName:(context) => const ListNewsVideo(),

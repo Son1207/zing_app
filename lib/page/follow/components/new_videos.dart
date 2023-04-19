@@ -29,76 +29,135 @@ class NewVideos extends StatelessWidget {
             child:Row(
               children: [
                 Padding(
-                  padding: const EdgeInsets.fromLTRB( 8, 0, 0, 0),
+                  padding: const EdgeInsets.fromLTRB(8, 0, 0, 0),
                   child: TextButton(
-                    onPressed: (){Navigator.pushNamed(context, ListNewsVideo.routeName);},
+                    onPressed: () {
+                      Navigator.pushNamed(context, ListNewsVideo.routeName);
+                    },
                     child: SizedBox(
                       height: 160.0,
                       width: 100.0,
-                      child: ClipRRect(
-                        borderRadius: const BorderRadius.all(Radius.circular(10)),
-                        child:Image.asset(
-                          'assets/images/new.jpg',
-                          fit: BoxFit.cover,
-                        ),
+                      child: Stack(
+                        children: [
+                          ClipRRect(
+                            borderRadius: const BorderRadius.all(Radius.circular(10)),
+                            child: Image.asset(
+                              'assets/images/new.jpg',
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                          const Positioned(
+                            top: 8,
+                            left: 8,
+                            child: CircleAvatar(
+                              backgroundImage: AssetImage('assets/images/zing_mp3.png'),
+                              radius: 16,
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ),
                 ),
 
                 Padding(
-                  padding: const EdgeInsets.all(0),
+                  padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
                   child: TextButton(
-                    onPressed: (){Navigator.pushNamed(context, ListNewsVideo1.routeName);},
+                    onPressed: () {
+                      Navigator.pushNamed(context, ListNewsVideo1.routeName);
+                    },
                     child: SizedBox(
                       height: 160.0,
                       width: 100.0,
-                      child: ClipRRect(
-                        borderRadius: const BorderRadius.all(Radius.circular(10)),
-                        child:Image.asset(
-                          'assets/images/new1.jpg',
-                          fit: BoxFit.cover,
-                        ),
+                      child: Stack(
+                        children: [
+                          ClipRRect(
+                            borderRadius: const BorderRadius.all(Radius.circular(10)),
+                            child: Image.asset(
+                              'assets/images/new1.jpg',
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                          const Positioned(
+                            top: 8,
+                            left: 8,
+                            child: CircleAvatar(
+                              backgroundImage: AssetImage('assets/images/zing_mp3.png'),
+                              radius: 16,
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ),
                 ),
 
                 Padding(
-                  padding: const EdgeInsets.all(0),
+                  padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
                   child: TextButton(
-                    onPressed: (){Navigator.pushNamed(context, ListNewsVideo2.routeName);},
+                    onPressed: () {
+                      Navigator.pushNamed(context, ListNewsVideo2.routeName);
+                    },
                     child: SizedBox(
                       height: 160.0,
                       width: 100.0,
-                      child: ClipRRect(
-                        borderRadius: const BorderRadius.all(Radius.circular(10)),
-                        child:Image.asset(
-                          'assets/images/new2.jpg',
-                          fit: BoxFit.cover,
-                        ),
+                      child: Stack(
+                        children: [
+                          ClipRRect(
+                            borderRadius: const BorderRadius.all(Radius.circular(10)),
+                            child: Image.asset(
+                              'assets/images/new2.jpg',
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                          const Positioned(
+                            top: 8,
+                            left: 8,
+                            child: CircleAvatar(
+
+                              backgroundImage: AssetImage('assets/images/zing_mp3.png'),
+                              radius: 16,
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ),
                 ),
 
+
                 Padding(
-                  padding: const EdgeInsets.fromLTRB( 0, 0, 8, 0),
+                  padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
                   child: TextButton(
-                    onPressed: (){Navigator.pushNamed(context, ListNewsVideo3.routeName);},
+                    onPressed: () {
+                      Navigator.pushNamed(context, ListNewsVideo3.routeName);
+                    },
                     child: SizedBox(
                       height: 160.0,
                       width: 100.0,
-                      child: ClipRRect(
-                        borderRadius: const BorderRadius.all(Radius.circular(10)),
-                        child:Image.asset(
-                          'assets/images/new3.jpg',
-                          fit: BoxFit.cover,
-                        ),
+                      child: Stack(
+                        children: [
+                          ClipRRect(
+                            borderRadius: const BorderRadius.all(Radius.circular(10)),
+                            child: Image.asset(
+                              'assets/images/new3.jpg',
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                          const Positioned(
+                            top: 8,
+                            left: 8,
+                            child: CircleAvatar(
+                              backgroundImage: AssetImage('assets/images/zing_mp3.png'),
+                              radius: 16,
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ),
                 ),
+
               ],
             ),
           )

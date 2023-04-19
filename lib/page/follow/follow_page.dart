@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'package:video_player/video_player.dart';
+import 'package:zing_app/page/follow/components/article_description.dart';
 import 'package:zing_app/page/follow/components/comment_posts.dart';
 import 'dart:convert';
 import 'package:zing_app/page/follow/components/category_follow.dart';
 import 'package:zing_app/page/follow/components/new_videos.dart';
+import 'package:zing_app/page/follow/components/post_video.dart';
 import 'package:zing_app/page/follow/components/posts_layout.dart';
 import 'package:zing_app/page/search.dart';
 
@@ -18,7 +19,6 @@ class FollowPage extends StatefulWidget {
 // ignore: camel_case_types
 class FollowPageState extends State<FollowPage> {
   List<dynamic> data = [];
-  late VideoPlayerController _controller;
 
   bool _isColor = true;
   bool _isIcon = true;
@@ -36,7 +36,7 @@ class FollowPageState extends State<FollowPage> {
     final response = await http.post(url, body: {
       "order_by": "DESC",
       "current_page": "1",
-      "number_of_record": "5",
+      "number_of_record": "7",
       "secret_key": "{{secret_key}}"
     });
 
@@ -51,13 +51,6 @@ class FollowPageState extends State<FollowPage> {
   }
 
   @override
-  void dispose() {
-    super.dispose();
-    // add this
-    _controller.dispose();
-  }
-
-  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: RefreshIndicator(
@@ -65,7 +58,7 @@ class FollowPageState extends State<FollowPage> {
         child: CustomScrollView(
           slivers: [
             SliverPadding(
-              padding: const EdgeInsets.fromLTRB(0, 40, 0, 0),
+              padding: const EdgeInsets.fromLTRB(0, 10, 0, 0),
               sliver: SliverToBoxAdapter(
                 child: Column(
                   children: const [
@@ -81,13 +74,12 @@ class FollowPageState extends State<FollowPage> {
                 (context, index) {
                   List<dynamic> pictures = data[index]['pictures'];
                   var avatarNguoiDang = data[index]['avatar_nguoi_dang'];
-                  //var video_url = data[index]['video_url'];
+                  var video_url = data[index]['video_url'];
                   var thumbnail = data[index]['thumbnail']as String?;
                   var moTa = data[index]['mo_ta'] as String?;
                   var tongSoLuotComment = data[index]['tong_so_luot_comment'];
                   var nguoiDang = data[index]['nguoi_dang'];
                   var tongSoLuotLike = data[index]['tong_so_luot_like'] as int?;
-                  //final VideoPlayerController _controller =VideoPlayerController.network(video_url);
 
                   final likeCount = tongSoLuotLike != null ? tongSoLuotLike + 1 : 0;
                   return Column(
@@ -138,33 +130,38 @@ class FollowPageState extends State<FollowPage> {
                           ],
                         ),
                       ),
-                      Padding(
-                        padding: const EdgeInsets.fromLTRB(16, 10, 16, 0),
-                        child: Text(
-                          moTa ?? '',
-                          maxLines: 6,
-                        ),
-                      ),
-
-                      // FutureBuilder(
-                      //   future: _controller.initialize(),
-                      //   builder: (context, snapshot) {
-                      //     if (snapshot.connectionState == ConnectionState.done) {
-                      //       return AspectRatio(
-                      //         aspectRatio: _controller.value.aspectRatio,
-                      //         child: VideoPlayer(_controller),
-                      //       );
-                      //     } else {
-                      //       return Center(child: CircularProgressIndicator());
-                      //     }
-                      //   },
-                      // ),
+                      ArticleDescription(moTa: moTa),
 
                       //Xử lý Layout hiển thị hình ảnh trong bài Post
                       //từ 1 đến 5 ảnh
                       pictures.isEmpty
-                          ? (thumbnail != null ? Image.network(thumbnail.toString()) : Container())
+                          ? (thumbnail != null
+                          ? GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => PostVideo(videoUrl: video_url),
+                            ),
+                          );
+                        },
+                        child: Stack(
+                          children: [
+                            Image.network(thumbnail.toString()),
+                            Positioned.fill(
+                              child: Icon(
+                                Icons.play_circle_fill,
+                                color: Colors.white,
+                                size: 48.0,
+                              ),
+                            ),
+                          ],
+                        ),
+                      )
+                          : Container())
                           : PostsLayout(pictures: pictures),
+
+
 
                       Row(
                         children: [
@@ -209,8 +206,7 @@ class FollowPageState extends State<FollowPage> {
                           children: [
                             TextButton.icon(
                               style: TextButton.styleFrom(
-                                foregroundColor:
-                                    Colors.black, // text + icon color
+                                foregroundColor: Colors.black, // text + icon color
                               ),
                               icon: Icon(
                                   _isIcon
@@ -230,8 +226,7 @@ class FollowPageState extends State<FollowPage> {
                             ),
                             TextButton.icon(
                               style: TextButton.styleFrom(
-                                foregroundColor:
-                                    Colors.black, // text + icon color
+                                foregroundColor: Colors.black, // text + icon color
                               ),
                               icon: const Icon(Icons.mode_comment_outlined),
                               label: const Text(
@@ -244,8 +239,7 @@ class FollowPageState extends State<FollowPage> {
                             ),
                             TextButton.icon(
                               style: TextButton.styleFrom(
-                                foregroundColor:
-                                    Colors.black, // text + icon color
+                                foregroundColor: Colors.black, // text + icon color
                               ),
                               icon: const Icon(Icons.share_outlined),
                               label: const Text(
@@ -258,8 +252,7 @@ class FollowPageState extends State<FollowPage> {
                       ),
                     ],
                   );
-                },
-                childCount: data.length,
+                },childCount: data.length,
               ),
             )
           ],

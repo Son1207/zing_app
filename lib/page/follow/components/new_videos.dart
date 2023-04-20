@@ -50,7 +50,7 @@ class NewVideos extends StatelessWidget {
                             top: 8,
                             left: 8,
                             child: CircleAvatar(
-                              backgroundImage: AssetImage('assets/images/zing_mp3.png'),
+                              backgroundImage: AssetImage('assets/images/bolero.jpeg'),
                               radius: 16,
                             ),
                           ),
@@ -82,7 +82,7 @@ class NewVideos extends StatelessWidget {
                             top: 8,
                             left: 8,
                             child: CircleAvatar(
-                              backgroundImage: AssetImage('assets/images/zing_mp3.png'),
+                              backgroundImage: AssetImage('assets/images/listen_2010sBallad.jpeg'),
                               radius: 16,
                             ),
                           ),
@@ -115,7 +115,7 @@ class NewVideos extends StatelessWidget {
                             left: 8,
                             child: CircleAvatar(
 
-                              backgroundImage: AssetImage('assets/images/zing_mp3.png'),
+                              backgroundImage: AssetImage('assets/images/listen_2010sEDM.jpeg'),
                               radius: 16,
                             ),
                           ),
@@ -148,7 +148,7 @@ class NewVideos extends StatelessWidget {
                             top: 8,
                             left: 8,
                             child: CircleAvatar(
-                              backgroundImage: AssetImage('assets/images/zing_mp3.png'),
+                              backgroundImage: AssetImage('assets/images/nhac_moi_ngay.jpeg'),
                               radius: 16,
                             ),
                           ),

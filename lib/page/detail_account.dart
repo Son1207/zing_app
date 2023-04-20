@@ -12,7 +12,7 @@ class DetailAccount extends StatelessWidget {
       body: Column(
         children: [
           Padding(
-            padding:const EdgeInsets.only(top: 30),
+            padding:const EdgeInsets.only(top: 40),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -60,7 +60,7 @@ class DetailAccount extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(top: 15.0),
             child: Container(
-              height: 120,
+              height: 140,
               width: 350,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20.0),

@@ -74,7 +74,7 @@ class _CommentPostsState extends State<CommentPosts> {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Bình luận"),
-        backgroundColor: Colors.redAccent,
+        backgroundColor: Colors.purple,
       ),
       body: CommentBox(
         userImage: CommentBox.commentImageParser(

@@ -9,7 +9,7 @@ class RadioPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
-        padding: const EdgeInsets.fromLTRB( 0, 10, 0, 0),
+        padding: const EdgeInsets.fromLTRB( 0, 5, 0, 0),
         child: Column(
           children:const [
             Search(),

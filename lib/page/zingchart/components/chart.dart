@@ -52,7 +52,7 @@ class ChartState extends State<Chart> {
     return AspectRatio(
       aspectRatio: 1,
       child: Padding(
-        padding: const EdgeInsets.fromLTRB( 0, 10, 0, 0),
+        padding: const EdgeInsets.fromLTRB( 0, 5, 0, 0),
         child: Column(
           children: <Widget>[
             Padding(

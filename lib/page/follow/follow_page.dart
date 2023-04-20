@@ -58,7 +58,7 @@ class FollowPageState extends State<FollowPage> {
         child: CustomScrollView(
           slivers: [
             SliverPadding(
-              padding: const EdgeInsets.fromLTRB(0, 10, 0, 0),
+              padding: const EdgeInsets.fromLTRB(0, 5, 0, 0),
               sliver: SliverToBoxAdapter(
                 child: Column(
                   children: const [
@@ -74,17 +74,18 @@ class FollowPageState extends State<FollowPage> {
                 (context, index) {
                   List<dynamic> pictures = data[index]['pictures'];
                   var avatarNguoiDang = data[index]['avatar_nguoi_dang'];
-                  var video_url = data[index]['video_url'];
-                  var thumbnail = data[index]['thumbnail']as String?;
+                  var videoUrl = data[index]['video_url'];
+                  var thumbnail = data[index]['thumbnail'] as String?;
                   var moTa = data[index]['mo_ta'] as String?;
                   var tongSoLuotComment = data[index]['tong_so_luot_comment'];
                   var nguoiDang = data[index]['nguoi_dang'];
                   var tongSoLuotLike = data[index]['tong_so_luot_like'] as int?;
+                  var ngayDang = data[index]['ngay_dang'];
 
-                  final likeCount = tongSoLuotLike != null ? tongSoLuotLike + 1 : 0;
+                  final likeCount =
+                      tongSoLuotLike != null ? tongSoLuotLike + 1 : 0;
                   return Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Padding(
                         padding: const EdgeInsets.only(top: 0),
@@ -98,7 +99,8 @@ class FollowPageState extends State<FollowPage> {
                         child: Row(
                           children: [
                             ClipRRect(
-                              borderRadius: const BorderRadius.all(Radius.circular(80)),
+                              borderRadius:
+                                  const BorderRadius.all(Radius.circular(80)),
                               child: Image.network(
                                 avatarNguoiDang,
                                 height: 50.0,
@@ -111,18 +113,36 @@ class FollowPageState extends State<FollowPage> {
                               //   width: 50.0,
                               // ),
                             ),
-
                             Padding(
                               padding: const EdgeInsets.only(left: 10),
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text(nguoiDang),
-                                  const SizedBox(height: 10),
-                                  const Text(
-                                    "Đề xuất cho bạn",
-                                    style: TextStyle(
-                                        color: Color.fromRGBO(90, 90, 90, 0.9)),
+                                  Row(
+                                    children: [
+                                      Text(nguoiDang),
+                                      const Padding(
+                                        padding: EdgeInsets.only(left: 10.0),
+                                        child: CircleAvatar(
+                                          radius: 2,
+                                          backgroundColor: Colors.black,
+                                        ),
+                                      ),
+                                      const Padding(
+                                        padding: EdgeInsets.only(left: 10.0),
+                                        child: Text('Quan tâm',style: TextStyle(
+                                            color: Colors.purple,
+                                        fontWeight: FontWeight.bold),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.only(top: 8.0),
+                                    child: Text(ngayDang,
+                                      style: const TextStyle(
+                                          color: Color.fromRGBO(90, 90, 90, 0.9)),
+                                    ),
                                   ),
                                 ],
                               ),
@@ -130,38 +150,39 @@ class FollowPageState extends State<FollowPage> {
                           ],
                         ),
                       ),
+
+                      //mô tả của bài Post
                       ArticleDescription(moTa: moTa),
 
                       //Xử lý Layout hiển thị hình ảnh trong bài Post
                       //từ 1 đến 5 ảnh
                       pictures.isEmpty
                           ? (thumbnail != null
-                          ? GestureDetector(
-                        onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => PostVideo(videoUrl: video_url),
-                            ),
-                          );
-                        },
-                        child: Stack(
-                          children: [
-                            Image.network(thumbnail.toString()),
-                            Positioned.fill(
-                              child: Icon(
-                                Icons.play_circle_fill,
-                                color: Colors.white,
-                                size: 48.0,
-                              ),
-                            ),
-                          ],
-                        ),
-                      )
-                          : Container())
+                              ? GestureDetector(
+                                  onTap: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) =>
+                                            PostVideo(videoUrl: videoUrl),
+                                      ),
+                                    );
+                                  },
+                                  child: Stack(
+                                    children: [
+                                      Image.network(thumbnail.toString()),
+                                      const Positioned.fill(
+                                        child: Icon(
+                                          Icons.play_arrow_sharp,
+                                          color: Colors.white,
+                                          size: 70.0,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                )
+                              : Container())
                           : PostsLayout(pictures: pictures),
-
-
 
                       Row(
                         children: [
@@ -177,13 +198,14 @@ class FollowPageState extends State<FollowPage> {
                               ],
                             ),
                           ),
-
                           Padding(
                             padding: const EdgeInsets.fromLTRB(230, 20, 16, 0),
                             child: Row(
                               children: [
                                 Text(tongSoLuotComment?.toString() ?? ''),
-                                const SizedBox(width: 5,),
+                                const SizedBox(
+                                  width: 5,
+                                ),
                                 const Text('bình luận'),
                               ],
                             ),
@@ -206,7 +228,8 @@ class FollowPageState extends State<FollowPage> {
                           children: [
                             TextButton.icon(
                               style: TextButton.styleFrom(
-                                foregroundColor: Colors.black, // text + icon color
+                                foregroundColor:
+                                    Colors.black, // text + icon color
                               ),
                               icon: Icon(
                                   _isIcon
@@ -226,7 +249,8 @@ class FollowPageState extends State<FollowPage> {
                             ),
                             TextButton.icon(
                               style: TextButton.styleFrom(
-                                foregroundColor: Colors.black, // text + icon color
+                                foregroundColor:
+                                    Colors.black, // text + icon color
                               ),
                               icon: const Icon(Icons.mode_comment_outlined),
                               label: const Text(
@@ -239,7 +263,8 @@ class FollowPageState extends State<FollowPage> {
                             ),
                             TextButton.icon(
                               style: TextButton.styleFrom(
-                                foregroundColor: Colors.black, // text + icon color
+                                foregroundColor:
+                                    Colors.black, // text + icon color
                               ),
                               icon: const Icon(Icons.share_outlined),
                               label: const Text(
@@ -252,7 +277,8 @@ class FollowPageState extends State<FollowPage> {
                       ),
                     ],
                   );
-                },childCount: data.length,
+                },
+                childCount: data.length,
               ),
             )
           ],
@@ -261,5 +287,3 @@ class FollowPageState extends State<FollowPage> {
     );
   }
 }
-
-

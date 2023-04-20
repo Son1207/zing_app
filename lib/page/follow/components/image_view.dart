@@ -13,14 +13,12 @@ class ImageView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.black,
+          backgroundColor: Colors.black,
           leading: IconButton(
               icon: const Icon(Icons.close),
               onPressed: () {
                 Navigator.pop(context);
-              }
-          )
-      ),
+              })),
       body: PhotoViewGallery.builder(
         itemCount: pictures.length,
         builder: (BuildContext context, int index) {

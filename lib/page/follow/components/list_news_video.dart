@@ -41,7 +41,7 @@ class ListNewsVideoState extends State<ListNewsVideo> {
     final PageController controller = PageController();
     return Scaffold(
       appBar: AppBar(
-        toolbarHeight: 35,
+        toolbarHeight: 30,
         backgroundColor: Colors.black,
       ),
       body: PageView(
@@ -49,9 +49,8 @@ class ListNewsVideoState extends State<ListNewsVideo> {
         controller: controller,
         children: <Widget>[
           for (var vc in vcs)
-            VideoBox(controller: vc),
+            VideoBox(controller: vc,bottomPadding: const EdgeInsets.only(bottom: 50.0), ),
         ],
-
       ),
     );
   }

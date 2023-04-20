@@ -49,7 +49,7 @@ class _ListNewsVideo3State extends State<ListNewsVideo3> {
         controller: controller,
         children: <Widget>[
           for (var vc in vcs)
-            VideoBox(controller: vc),
+            VideoBox(controller: vc,bottomPadding: const EdgeInsets.only(bottom: 50.0), ),
         ],
       ),
     );

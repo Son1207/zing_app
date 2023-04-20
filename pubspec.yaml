@@ -21,7 +21,6 @@ dependencies:
   photo_view: ^0.14.0
   cached_network_image: ^3.2.3
   expandable_text: ^2.3.0
-  chewie: ^1.2.0
 
 
 dev_dependencies:

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:video_box/video_box.dart';
 
 class ListVideos extends StatefulWidget {
-  static String routeName="/videos";
+  static String routeName="/list_videos";
 
   const ListVideos({super.key});
   @override
@@ -43,7 +43,7 @@ class _ListVideoState extends State<ListVideos> {
     final PageController controller = PageController();
     return Scaffold(
       appBar: AppBar(
-        toolbarHeight: 35,
+        toolbarHeight: 30,
         backgroundColor: Colors.black,
       ),
       body: PageView(

@@ -20,7 +20,7 @@ class _DiscoverPageState extends State<DiscoverPage> {
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Padding(
-          padding: const EdgeInsets.fromLTRB( 0, 10, 0, 0),
+          padding: const EdgeInsets.fromLTRB( 0, 5, 0, 0),
           child: Column(
             children: [
               const Search(),

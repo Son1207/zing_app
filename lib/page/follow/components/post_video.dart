@@ -7,6 +7,7 @@ class PostVideo extends StatefulWidget {
   const PostVideo({Key? key, required this.videoUrl}) : super(key: key);
 
   @override
+  // ignore: library_private_types_in_public_api
   _PostVideoState createState() => _PostVideoState();
 }
 
@@ -16,7 +17,8 @@ class _PostVideoState extends State<PostVideo> {
   @override
   void initState() {
     super.initState();
-    _videoController = VideoController(source: VideoPlayerController.asset("assets/videos/thang4laloinoidoicuaem.mp4"))
+    _videoController = VideoController(
+        source: VideoPlayerController.asset("assets/videos/video_post.mp4"))
       ..initialize().then((_) {
         _videoController.play();
       });

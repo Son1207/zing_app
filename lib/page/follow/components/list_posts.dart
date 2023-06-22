@@ -26,7 +26,7 @@ class ListPostsState extends State<ListPosts> {
     final response = await http.post(url, body: {
       "order_by": "DESC",
       "current_page": "1",
-      "number_of_record": "20",
+      "number_of_record": "30",
       "secret_key": "{{secret_key}}"
     });
 

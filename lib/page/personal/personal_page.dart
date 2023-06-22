@@ -13,6 +13,7 @@ class PersonalPage extends StatelessWidget {
       backgroundColor: Colors.white,
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
+
         child: Padding(
           padding: const EdgeInsets.fromLTRB( 0, 5, 0, 0),
           child: Column(

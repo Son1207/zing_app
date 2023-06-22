@@ -26,7 +26,6 @@ class _DiscoverPageState extends State<DiscoverPage> {
               const Search(),
               const SlideShow(),
               const CategoryDiscover(),
-
               const Padding(
                 padding: EdgeInsets.fromLTRB(16, 20, 16, 0),
                 child: Align(
